@@ -9,7 +9,7 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 
 | Datum  | Översikt                                                       |
 |--------|----------------------------------------------------------------|
-| [Aug 27][Aug27] | Visual Studio Installer + Visual Studio               |
+| [Aug 27][Aug27] | "The Big Picture", Visual Studio Installer + Visual Studio               |
 | [Sep 1][Sep1]   | Git/Github, Powershell                                |
 
 
