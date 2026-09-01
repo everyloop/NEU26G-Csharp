@@ -1,3 +1,3 @@
 # Övningsuppgifter
 
-[Powershell](https://github.com/everyloop/NEU25G-Csharp/blob/master/Exercises/Powershell.md)  
+[Powershell](https://github.com/everyloop/NEU26G-Csharp/blob/master/Exercises/Powershell.md)  
