@@ -13,5 +13,5 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 | [Sep 1][Sep1]   | Git/Github, Powershell                                |
 
 
-[Aug27]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep1.md
+[Aug27]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Aug27.md
 [Sep1]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep1.md
