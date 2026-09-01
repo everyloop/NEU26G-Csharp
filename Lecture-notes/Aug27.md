@@ -19,7 +19,7 @@ Visual studio installer används för att installera eller uppdatera befintlig i
 
 I installern kan man välja att istallera enskilda komponenter, men det vanligaste är att man väljer ett paket, så kallat "workload", för den typ av utveckling man ska göra. För denna kursen använder vi workload ".NET Desktop Development"
 
-I denna kurs använder vi [Visual Studio 2022 Community](https://visualstudio.microsoft.com/downloads/)
+I denna kurs använder vi [Visual Studio 2026 Community](https://visualstudio.microsoft.com/downloads/)
 
 ## Visual studio
 
@@ -33,7 +33,7 @@ Varje projekt lagras sedan i en undermapp med samma namn som projektet. I projek
 
 För att bygga ett projekt, högerklicka på projektet i Solution Explorer och välj "Build". Detta kommer kompilera koden och bygga en körbar .exe fil.
 
-Kolla i undermappen bin/Debug/net8.0 för att se de filer som du byggde.
+Kolla i undermappen bin/Debug/net10.0 för att se de filer som du byggde.
 
 Om du istället högerklickar på din solution i Solution Explorer och väljer "Build Solution" så kommer visual studio bygga samtliga projekt (som uppdaterats sedan senaste bygg) som ingår i din solution.
 
