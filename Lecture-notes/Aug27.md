@@ -1,5 +1,19 @@
 # Augusti 27
 
+## The Big Picture - Introduktionsföreläsning
+
+- Vad är en dator?​
+- Vad är programmering?​
+- Vad är C#?​
+- Vad är .NET?​
+- Vad är den röda tråden i utbildningen?​
+- Vad menas med frontend, backend, och fullstack?​
+- Vad gör en utvecklare?​
+- Vad ska ni EGENTLIGEN lära er?​
+- Hur tänker en professionell utvecklare?​
+
+[Länk till slide](https://github.com/everyloop/NEU26G-Csharp/blob/master/Resources/Introduktion.pdf)
+
 ## Visual studio installer
 Visual studio installer används för att installera eller uppdatera befintlig installation med fler komponenter.
 
