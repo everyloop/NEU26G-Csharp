@@ -1,6 +1,9 @@
 # Övningsuppgifter för Powershell
 
+
 Öppna PowerShell och gör följande uppgifter.
+
+Se [lektionsanteckningarna](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep1.md#Powershell) för hjälp med kommandona.  
 
 ## 1. Navigera i filsystemet
 
