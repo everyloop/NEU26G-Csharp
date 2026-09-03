@@ -20,7 +20,7 @@ if (true)
 
 
 // Identifiers - Namn som man ger på variabler, funktioner, klasser etc.
-// - Kan innehlla bokstäver, nummer och underscore (_), inte övriga tecken eller space.
+// - Kan innehålla bokstäver, siffror och underscore (_), inte övriga tecken eller space.
 // - Måste börja med bokstav eller underscore (inte siffra)
 // - Man kan inte använda reserverad ord (keywords)
 // - variabler och parametrar skrivs i camelCase, alla andra identifiers (t.ex klasser & metoder) använder PascalCase. (enligt konvention).
