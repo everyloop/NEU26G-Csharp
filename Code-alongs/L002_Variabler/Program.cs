@@ -31,12 +31,12 @@ sbyte sb = -100;
 
 // C# är ett starkt typat språk:
 // Om man försöker sätta in data av felaktig typ i en variabel så resulterar det i ett kompileringsfel.
-name = 3;
+//name = 3;
 
 // C# är ett typsäkert språk:
 // Man kan bara utföra operationer som en given datatyp tillåter
 Console.WriteLine(y + 3);
-Console.WriteLine(isEnabled + 3); // <- Otillåten operation mellan bool och int.
+//Console.WriteLine(isEnabled + 3); // <- Otillåten operation mellan bool och int.
 
 
 // Implicit (underförstått)
@@ -47,4 +47,39 @@ int myInt;
 
 // Implicit typad variabel - Med keyword 'var' så avgör kompilatorn datatyp (utifrån den initialt tilldelade värdet)
 var myVariable = 3.24f;
+
+
+// Scope - En variabels (ett objekts) livstid (lifetime)
+// Tre nivåer: Class-scope, Method-scope & Block-scope
+
+bool myBool = true;
+
+if (isEnabled)
+{
+    bool myOtherBool = true;
+
+    if (true)
+    {
+        bool myThirdBool = true;
+        Console.WriteLine(myBool);
+        Console.WriteLine(myOtherBool);
+        Console.WriteLine(myThirdBool);
+    }
+
+    if (true)
+    {
+        bool myThirdBool = true;
+        Console.WriteLine(myBool);
+        Console.WriteLine(myOtherBool);
+        Console.WriteLine(myThirdBool);
+    }
+
+    Console.WriteLine(myBool);
+    Console.WriteLine(myOtherBool);
+    Console.WriteLine(myThirdBool);
+}
+
+Console.WriteLine(myBool);
+Console.WriteLine(myOtherBool);
+Console.WriteLine(myThirdBool);
 
