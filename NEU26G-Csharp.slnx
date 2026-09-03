@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="Code-alongs/L001_Introduktion/L001_Introduktion.csproj" />
   <Project Path="Code-alongs/L002_Variabler/L002_Variabler.csproj" Id="3dfccc25-2944-4297-b811-d06651d866ce" />
+  <Project Path="Code-alongs/L003_Operatorer/L003_Operatorer.csproj" Id="77515e10-b93b-4d49-a052-cd8e550068ce" />
 </Solution>
