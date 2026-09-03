@@ -33,3 +33,9 @@ if (true)
 // - camelCase (förstaOrderBörjarMedLitenBokstavOchAllaFöljandeOrdBörjarPåStorBokstav)
 // - PascalCase (AllaOrdBörjarMedStorBokstav)
 // - snake_case (bara_små_bokstäver_ord_avskiljda_med_underscore) <- Används ej i C#
+
+
+// C# är case-sensitive.
+
+int myVariable;
+int MyVariable;
