@@ -12,7 +12,9 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 | [Aug 27][Aug27] | "The Big Picture", Visual Studio Installer + Visual Studio               |
 | [Sep 1][Sep1]   | Git/Github, Powershell                                |
 | [Sep 3][Sep3] | Variabler, Datatyper, If-satser, Loopar.                |
+| [Sep 4][Sep4] | Felsökning, Indexering, Arrayer, Strängar.                |
 
 [Aug27]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Aug27.md
 [Sep1]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep1.md
 [Sep3]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep3.md
+[Sep4]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep4.md
