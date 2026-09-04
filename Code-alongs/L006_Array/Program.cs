@@ -54,3 +54,15 @@ foreach (string city in cities)
     //city = "Alingsås";
     Console.WriteLine(city);
 }
+
+
+// Arrayer kan göras av vilken datatyp som helst, men alla element i en array har alltid samma datatyp.
+// Här är ett exempel på en int[]  (array av int / int-array)
+
+Console.WriteLine("\n\nUse foreach to print double numbers.");
+int[] numbers = new int[] { 5, 58, 103, 281 };
+
+foreach (int number in numbers)
+{
+    Console.WriteLine(number * 2);
+}
