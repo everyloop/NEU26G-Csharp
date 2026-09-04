@@ -57,7 +57,7 @@ Kajak är ett palindrom.
 
 ## 6. Miniräknare
 
-Skapa en enkel miniräknare som kan hantera de fyra räknesätten med två operander. Till skillnad från [uppgift 6 i övningsuppgifter med variabler](https://github.com/everyloop/NET24-Csharp/blob/master/Exercises/Variabler.md), så ska inmatningen nu ske på en rad (första talet, operator, andra talet). Ignorera inmatade mellanslag i strängen. Om man t.ex. matar in strängen "34 - 14", så ska programmet skriva ut "= 20".
+Skapa en enkel miniräknare som kan hantera de fyra räknesätten med två operander. Till skillnad från [uppgift 6 i övningsuppgifter med variabler](https://github.com/everyloop/NEU26G-Csharp/blob/master/Exercises/Variabler.md), så ska inmatningen nu ske på en rad (första talet, operator, andra talet). Ignorera inmatade mellanslag i strängen. Om man t.ex. matar in strängen "34 - 14", så ska programmet skriva ut "= 20".
 
 **Exempel:**
 ```
