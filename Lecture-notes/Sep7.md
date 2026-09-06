@@ -1,4 +1,4 @@
-# September 8
+# September 7
 
 **Code-along:**  
 <!--
