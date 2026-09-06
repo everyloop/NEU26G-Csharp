@@ -71,8 +71,6 @@ Rekursiva anrop *kan* användas för att lösa olika typer av problem. Dessas pr
 
 Min rekommendation är att ni helt undviker att använda rekursiva anrop, eftersom dessa oftast gör koden krångligare; specielt om man är ny på programmering.
 
-Är man ändå intresserad av att förstå hur de fungerar så kan man hitta övningar på rekursiva anrop t.ex. [här](https://www.exercisescsharp.com/recursion/)
-
 ## Riktlinjer för att skriva tydlig kod
 
 Kod är främst kommunikation med andra människor.
