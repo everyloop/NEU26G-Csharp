@@ -7,4 +7,6 @@
   <Project Path="Code-alongs/L006_Array/L006_Array.csproj" Id="9a00e265-0702-4555-ae8d-e5c579842e9f" />
   <Project Path="Code-alongs/L007_Strängar/L007_Strängar.csproj" Id="e5a9c4e5-94d5-4995-9ccb-a08ddd5fa5c7" />
   <Project Path="Code-alongs/L008_Funktioner/L008_Funktioner.csproj" Id="210e3187-e0e2-4906-952f-87b1ebc31bea" />
+  <Project Path="Code-alongs/L009_String_och_Char-metoder/L009_String_och_Char-metoder.csproj" Id="b2be18b6-94e3-4a7c-9803-63416fd28a0a" />
+  <Project Path="Code-alongs/L010_Math_Random/L010_Math_Random.csproj" Id="006aa193-f39b-4a21-9bd0-19d2cd9e2f2a" />
 </Solution>
