@@ -21,12 +21,12 @@ Detta är två klasser som tillhandahåller metoder för trigonometri, logaritme
 Båda klasser har samma uppsättningar metoder. Skillnaden är bara att Math gör operationer på double, medan MathF används för float.
 
 **Code-along:**  
-[L010_Math_Random_Console](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L010_Math_Random/Program.cs)
+[L010_Math_Random](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L010_Math_Random/Program.cs)
 
 
 ## [Random](https://learn.microsoft.com/en-us/dotnet/api/system.random?view=net-10.0)
 Datatyp som representerar en pseudo-random nummergenerator.
 
 **Code-along:**  
-[L010_Math_Random_Console](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L010_Math_Random/Program.cs)
+[L010_Math_Random](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L010_Math_Random/Program.cs)
 
