@@ -16,6 +16,7 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 | [Sep 7][Sep7]   | Funktioner, Parametrar, Returvärde, Call Stack.               |
 | [Sep 9][Sep9]   | Algoritmer & Problemlösning                                   |
 | [Sep 11][Sep11] | Introduktion till några av de vanligaste klasserna i .NET     |
+| [Sep 14][Sep14] | Exception handling: try-catch-finally & throw                 |
 
 [Aug27]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Aug27.md
 [Sep1]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep1.md
@@ -24,3 +25,4 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 [Sep7]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep7.md
 [Sep9]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep9.md
 [Sep11]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep11.md
+[Sep14]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep14.md
