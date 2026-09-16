@@ -1,5 +1,8 @@
 # September 16
 
+**Code-along:**  
+[L012_CharacterEncoding](https://github.com/everyloop/NEU26G-Csharp/tree/master/Code-alongs/L012_CharacterEncoding)
+
 ## Binära och hexdecimala talsystemen
 
 Ett positionssystem är ett sätt att skriva tal där en siffers värde bestäms av dess plats, eller position, i talet. Till skillnad från till exempel det romerska talsystemet, där ett tals värde är enbart bestämt av de ingående symbolerna, ändras värdet på en siffra i ett positionssystem beroende på var den står.
