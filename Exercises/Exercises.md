@@ -6,3 +6,4 @@
 [Indexering](https://github.com/everyloop/NEU26G-Csharp/blob/master/Exercises/Indexering.md)  
 [Funktioner](https://github.com/everyloop/NEU26G-Csharp/blob/master/Exercises/Funktioner.md)  
 [Förberedelseövningar för labb 1](https://github.com/everyloop/NEU26G-Csharp/blob/master/Exercises/Förberedelseövningar_Labb1.md)  
+[Läs in metadata från bildfiler](https://github.com/everyloop/NEU26G-Csharp/blob/master/Exercises/MetaDataFrånFil.md)  
