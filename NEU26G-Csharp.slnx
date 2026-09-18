@@ -11,4 +11,5 @@
   <Project Path="Code-alongs/L010_Math_Random/L010_Math_Random.csproj" Id="006aa193-f39b-4a21-9bd0-19d2cd9e2f2a" />
   <Project Path="Code-alongs/L011_Undantagshantering/L011_Undantagshantering.csproj" Id="8601ce0d-8efe-43d1-bf5e-6c16aa1c2529" />
   <Project Path="Code-alongs/L012_CharacterEncoding/L012_CharacterEncoding.csproj" Id="5fe5a5bb-6cb5-4f60-a09c-c3d74656aeb1" />
+  <Project Path="Code-alongs/L013_Path_och_Directory/L013_Path_och_Directory.csproj" Id="9e74c88e-1e5e-483f-b448-c7f9da74d141" />
 </Solution>
