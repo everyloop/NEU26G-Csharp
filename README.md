@@ -19,6 +19,7 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 | [Sep 14][Sep14] | Exception handling: try-catch-finally & throw                 |
 | [Sep 16][Sep16] | Binary, Hexadecimal, Enheter/Prefix, ASCII, Unicode.          |
 | [Sep 18][Sep18] | Filhantering. Läsa och skriva filer. Strömmar.                |
+| [Sep 21][Sep21] | Introduktion OOP: klasser och objekt.                         |
 
 [Aug27]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Aug27.md
 [Sep1]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep1.md
@@ -30,3 +31,4 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 [Sep14]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep14.md
 [Sep16]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep16.md
 [Sep18]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep18.md
+[Sep21]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep21.md
