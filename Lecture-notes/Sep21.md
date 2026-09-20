@@ -58,6 +58,23 @@ Ett **objekt** är en **instans av en klass**.
 
 ![OOP](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Images/OOP.png)
 
+## Access modifiers
+
+Access modifiers används för att bestämma **vilka delar av koden som har åtkomst** till en klass, metod eller variabel. Det är grundbulten i *inkapsling* (att dölja koddetaljer).
+
+### 🔒 private
+
+Endast synlig **inuti samma klass** där den är definierad.
+
+*Om du inte skriver någon modifierare på en metod eller variabel blir den automatiskt `private`.*
+
+### 🌐 public
+
+Synlig för **all kod överallt**, både i och utanför den egna klassen.
+
+### Tumregel för design: 
+**Starta alltid** med `private`. Gör det bara `public` om det absolut behövs. Det håller koden ren och minskar risken för buggar.
+
 ## this
 
 I C# används keyword "this" för att referera till den instans av klass som har anropat en av klassens metoder.
