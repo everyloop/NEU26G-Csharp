@@ -1,9 +1,7 @@
 # September 21
 
-<!--
 **Code-along:**  
-[L016_OOP_Intro](https://github.com/everyloop/NEU25G-Csharp/blob/master/Code-alongs/L016_OOP_Intro/Program.cs)
--->
+[L016_OOP_Intro](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L016_OOP_intro/Program.cs)
 
 ## Object oriented programming (OOP)
 
@@ -113,9 +111,7 @@ Top level statements introducerades i C# 9. Innan dess behövde alla program all
 
 [Läs mer här!](https://www.thomasclaudiushuber.com/2020/08/18/c-9-top-level-statements-or-should-i-say-hey-wheres-the-main-method/)
 
-<!--
 Se även längre förklaring i kommentarerna i denna code-along:
 
 **Code-along:**  
-[L017_Main_method_entry_point](https://github.com/everyloop/NEU25G-Csharp/blob/master/Code-alongs/L017_Main_method_entry_point/Program.cs)
--->
+[L017_Main_method_entry_point](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L017_Main_method_entry_point/Program.cs)
