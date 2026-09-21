@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "L017_Main_method_entry_point": {
+      "commandName": "Project",
+      "commandLineArgs": "ett två tre fyra"
+    }
+  }
+}

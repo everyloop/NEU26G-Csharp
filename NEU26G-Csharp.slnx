@@ -14,4 +14,6 @@
   <Project Path="Code-alongs/L013_Path_och_Directory/L013_Path_och_Directory.csproj" Id="9e74c88e-1e5e-483f-b448-c7f9da74d141" />
   <Project Path="Code-alongs/L014_StreamReader_&amp;_StreamWriter/L014_StreamReader_&amp;_StreamWriter.csproj" Id="b55f624d-cdae-4d53-8099-4c8c6f902fb7" />
   <Project Path="Code-alongs/L015_FileStream/L015_FileStream.csproj" Id="cc9239f1-fe40-4142-bc04-19d0b80ce5e9" />
+  <Project Path="Code-alongs/L016_OOP_intro/L016_OOP_intro.csproj" Id="6150e417-7f0e-4e7c-81be-6f0334f1f019" />
+  <Project Path="Code-alongs/L017_Main_method_entry_point/L017_Main_method_entry_point.csproj" Id="bd073bf7-9100-4cf2-ae87-042379d55eb9" />
 </Solution>
