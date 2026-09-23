@@ -18,4 +18,5 @@
   <Project Path="Code-alongs/L017_Main_method_entry_point/L017_Main_method_entry_point.csproj" Id="bd073bf7-9100-4cf2-ae87-042379d55eb9" />
   <Project Path="Code-alongs/L018_Namespaces/L018_Namespaces.csproj" Id="3015c9cf-b0e6-4620-92d6-27b03c19f5e5" />
   <Project Path="Code-alongs/L019_Konstruktor/L019_Konstruktor.csproj" Id="23d1bb49-2b31-40e6-bf9b-aedd1251115b" />
+  <Project Path="Code-alongs/L020_Properties/L020_Properties.csproj" Id="b878f7ca-3d32-4414-8ef4-abe19a2a6ca0" />
 </Solution>
