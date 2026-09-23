@@ -2,10 +2,8 @@
 
 ## Namespaces
 
-<!--
 **Code-along:**  
-[L018_Namespaces](https://github.com/everyloop/NEU25G-Csharp/blob/master/Code-alongs/L018_Namespaces/Program.cs)
--->
+[L018_Namespaces](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L018_Namespaces/Program.cs)
 
 Ett namespace är som en mapp för klasser och andra typer.
 
@@ -17,10 +15,8 @@ Ett namespace är som en mapp för klasser och andra typer.
 
 ## Konstruktor
 
-<!--
 **Code-along:**  
-[L019_Konstruktor](https://github.com/everyloop/NEU25G-Csharp/blob/master/Code-alongs/L019_Konstruktor/Program.cs)
--->
+[L019_Konstruktor](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L019_Konstruktor/Program.cs)
 
 En konstruktor är en speciell metod som körs automatiskt när man skapar ett nytt objekt med new.
 Syftet är att sätta upp objektet i ett giltigt startläge:
@@ -69,10 +65,8 @@ När vi gör new Person("Anna", 30) händer:
 
 ## Properties
 
-<!--
 **Code-along:**  
-[L020_Properties](https://github.com/everyloop/NEU25G-Csharp/blob/master/Code-alongs/L020_Properties/Program.cs)
--->
+[L020_Properties](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L020_Properties/Program.cs)
 
 En property är som en kombination av ett fält och metoderna för att läsa/skriva det.
 
