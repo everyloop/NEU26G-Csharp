@@ -32,9 +32,15 @@
 //Console.WriteLine(cats[0].name);
 
 
+// Keyword 'new' används för skapa ett nytt objekt (en instans av en klass)
+// myCat i raden nedan är inte en instans av Cat, utan en referens till ett objekt av typen Cat.
 Cat myCat = new Cat() { name = "Pelle" };
-Cat myOtherCat = new Cat() { name = "Måns" };
 
+// Exmepel: I detta fallet skapas inget nytt (new) objekt, utan myOtherCat pekar på samma katt som myCat
+// Det spelar alltså ingen roll vilken av referenserna vi använder för att ändra eller läsa kattens namn.
+Cat myOtherCat = myCat; //new Cat() { name = "Måns" };
+myOtherCat.name = "hello";
+Console.WriteLine(myCat.name);
 
 myCat.Greet();
 myOtherCat.Greet();
@@ -52,14 +58,22 @@ myCat.Greet();
 Console.WriteLine(Cat.DefaultNumberOfLives);
 Cat.PrintNumberOfLives();
 
+// En klass används för att definera en ny typ av objekt. Den beskriver data (fields & properties) och funktionalitet (metoder) som ett objekt har.
 class Cat
 {
+    // Access modfiers bestämmer vilken del av koden som har åtkomst till en specifik member (t.ex metod eller field)
+    // Private - Endast kod som finns internt i klass-definitionen kan komma åt denna. 
+    // Public  - Denna kan kommas åt även utanför klassen.
+
+    // Fields - en plats i minnet att lagra data. Jämförbart med en lokal variabel; men kopplad till ett objekt
     public string name = "default name";
     private int age = 1;
+    public int ActualNumberOfLives;
 
+    // Om en field (eller annan member) är markerad som "static" så hör den inte till de enskilda objektinstansterna, utan till datatypen
     public static int DefaultNumberOfLives = 9;
 
-    public int ActualNumberOfLives;
+    // Exempel: eftersom denna metod är static så anropas den på datatypen, alltså Cat.PrintNumberOfLives; inte myCat.PrintNumberOfLives()
     public static void PrintNumberOfLives()
     {
         Console.WriteLine($"Cats have {Cat.DefaultNumberOfLives} number of lives.");
@@ -70,6 +84,8 @@ class Cat
         age++;
     }
 
+    // Method overloading: C# låter oss ha flera definitioner av samma metod (samma namn) med olika inparametrar.
+    // ... vid anrop så väljs den definition där parametrarna matchar argumenten i anropet.
     public void Greet()
     {
         Console.WriteLine($"Hej, jag heter {name}, och jag är {age} år gammal!");
@@ -77,6 +93,7 @@ class Cat
 
     private void Greet(string name)
     {
+        // Keyword 'this' referensen till det egna objektet - alltså det objekt som metoden körs på.
         Console.WriteLine($"Hej {name}, jag heter {this.name}!");
     }
 
@@ -85,6 +102,5 @@ class Cat
         Greet(cat.name);
         //Console.WriteLine($"Hej {cat.name}, jag heter {this.name}!");
     }
-
 }
 
