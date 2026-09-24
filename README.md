@@ -20,7 +20,8 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 | [Sep 16][Sep16] | Binary, Hexadecimal, Enheter/Prefix, ASCII, Unicode.          |
 | [Sep 18][Sep18] | Filhantering. Läsa och skriva filer. Strömmar.                |
 | [Sep 21][Sep21] | Introduktion OOP: klasser och objekt.                         |
-| [Sep 23][Sep23] | Namespaces, Konstruktor, Properties     |
+| [Sep 23][Sep23] | Namespaces, Konstruktor, Properties                           |
+| [Sep 25][Sep25] | Value types och Reference types. Stack och Heap.              |
 
 [Aug27]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Aug27.md
 [Sep1]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep1.md
@@ -34,3 +35,4 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 [Sep18]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep18.md
 [Sep21]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep21.md
 [Sep23]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep23.md
+[Sep25]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep25.md
