@@ -19,4 +19,6 @@
   <Project Path="Code-alongs/L018_Namespaces/L018_Namespaces.csproj" Id="3015c9cf-b0e6-4620-92d6-27b03c19f5e5" />
   <Project Path="Code-alongs/L019_Konstruktor/L019_Konstruktor.csproj" Id="23d1bb49-2b31-40e6-bf9b-aedd1251115b" />
   <Project Path="Code-alongs/L020_Properties/L020_Properties.csproj" Id="b878f7ca-3d32-4414-8ef4-abe19a2a6ca0" />
+  <Project Path="Code-alongs/L021_Pass_by_value_vs_Pass_by_reference/L021_Pass_by_value_vs_Pass_by_reference.csproj" Id="d94f58ad-3534-4277-b295-294529669a7d" />
+  <Project Path="Code-alongs/L022_Struct_vs_Class/L022_Struct_vs_Class.csproj" />
 </Solution>
