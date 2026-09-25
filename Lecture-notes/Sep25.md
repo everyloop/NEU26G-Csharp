@@ -115,4 +115,4 @@ Stack:              Heap:
 
 
 **Code-along:**  
-[L022_Struct_&_Enum](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L022_Struct_vs_Class/Program.cs)
+[L022_Struct_vs_Class](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L022_Struct_vs_Class/Program.cs)
