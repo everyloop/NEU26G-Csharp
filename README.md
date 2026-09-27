@@ -22,6 +22,7 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 | [Sep 21][Sep21] | Introduktion OOP: klasser och objekt.                         |
 | [Sep 23][Sep23] | Namespaces, Konstruktor, Properties.                          |
 | [Sep 25][Sep25] | Stack & Heap. Value types & Reference types. Struct & Class.  |
+| [Sep 28][Sep28] | Arv och polymorfism                                           |
 
 [Aug27]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Aug27.md
 [Sep1]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep1.md
@@ -36,3 +37,4 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 [Sep21]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep21.md
 [Sep23]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep23.md
 [Sep25]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep25.md
+[Sep28]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep28.md
