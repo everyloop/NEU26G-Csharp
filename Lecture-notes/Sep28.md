@@ -12,10 +12,10 @@ Arv är en is-a-relationship, vilket betyder att ett objekt av typen Cat, även 
 
 [Läs mer om arv här!](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/inheritance)
 
-<!-- 
+
 **Code-along:**  
-[L023_Arv](https://github.com/everyloop/NEU25G-Csharp/blob/master/Code-alongs/L023_Arv/Program.cs)
- -->
+[L023_Arv_och_polymorfism](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L023_Arv_och_polymorfism/Program.cs)
+
 
 ## Polymorfism
 
