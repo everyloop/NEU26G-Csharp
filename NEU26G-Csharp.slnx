@@ -21,4 +21,5 @@
   <Project Path="Code-alongs/L020_Properties/L020_Properties.csproj" Id="b878f7ca-3d32-4414-8ef4-abe19a2a6ca0" />
   <Project Path="Code-alongs/L021_Pass_by_value_vs_Pass_by_reference/L021_Pass_by_value_vs_Pass_by_reference.csproj" Id="d94f58ad-3534-4277-b295-294529669a7d" />
   <Project Path="Code-alongs/L022_Struct_vs_Class/L022_Struct_vs_Class.csproj" />
+  <Project Path="Code-alongs/L023_Arv_och_polymorfism/L023_Arv_och_polymorfism.csproj" Id="a2045087-fb7f-427d-ada8-f8b6a95e099b" />
 </Solution>
