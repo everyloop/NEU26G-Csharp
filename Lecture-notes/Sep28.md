@@ -16,7 +16,7 @@ Arv är en is-a-relationship, vilket betyder att ett objekt av typen Cat, även 
 **Code-along:**  
 [L023_Arv](https://github.com/everyloop/NEU25G-Csharp/blob/master/Code-alongs/L023_Arv/Program.cs)
  -->
- 
+
 ## Polymorfism
 
 Polymorfism betyder "många former", och som namnet antyder så betyder det att vi kan ha flera olika versioner av t.ex metoder i vår kod, och att "rätt" metod väljs när vi gör ett anrop.
@@ -32,4 +32,10 @@ Ta exemplet med arrayen Animal[] ovan: eftersom alla som ärver av Animal har en
 
 [Läs här!](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
 
+### Jämförelse Cast, as, is
 
+- **Cast** `(Cat)animal` – *"Jag **lovar** att detta är en katt. Om jag har fel får programmet krascha, för då har jag skabbat bort mig i min logik."* (Används när man är 100 % säker).
+
+- **`as`-operatorn** `animal as Cat` – *"Jag **tror** att det är en katt, men jag är inte säker. Om det inte är det, gör variabeln till null så hanterar jag det på nästa rad."* (Används när det är okej att det misslyckas).
+
+- **`is`-mönstret** `if (animal is Cat cat)` – *"Jag **frågar** om det är en katt. Om kompilatorn kan se att svaret är ja, så får jag en färdigpackad katt-variabel direkt i handen."* (Det moderna, säkra standardsättet).
