@@ -11,9 +11,6 @@
 //    ett dolt ':base()' mot en parameterlös konstruktor) eller EXPLICIT
 //    via nycklelorden ': base(...)' eller ': this(...)' 
 
-using System.Runtime.CompilerServices;
-using System.Xml.Linq;
-
 Console.WriteLine("Start!");
 new Dog();
 
