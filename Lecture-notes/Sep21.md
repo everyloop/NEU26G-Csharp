@@ -21,12 +21,12 @@ Objektorienterad programmering (OOP) är ett sätt att strukturera program så a
 
 [Läs mer här!](https://sv.wikipedia.org/wiki/Objektorienterad_programmering)
 
-## Fyra grundprinciper i OOP
-
-- Encapsulation
-- Abstraction
-- Inheritance
-- Polymorphism
+## 🧭 De fyra designprinciperna (OOP)
+De 4 grundpelarna inom objektorienterad programmering:
+*   **Encapsulation (Inkapsling):** **Skydda och paketera** information. Klassen sätter lås på sina egna fält så att ingen kan korrumpera datan av misstag.
+*   **Abstraction (Abstraktion):** **Gömma** implementationsdetaljer. Vi visar *vad* något gör (t.ex. en knapp), inte *hur* det görs på insidan.
+*   **Inheritance (Arv):** **Dela och återanvända** funktionalitet. Subklasser får ta del av färdiga metoder och egenskaper gratis från en basklass.
+*   **Polymorphism (Polymorfism):** **Omdefiniera** beteende. Samma metodnamn (t.ex. `.MakeSound()`) kan anta helt olika skepnader beroende på vilket objekt som kör den.
 
 [Läs mer här!](https://medium.com/@estheremeka026/the-four-pillars-of-oop-in-c-6673b17244a7)
 
