@@ -24,4 +24,7 @@
   <Project Path="Code-alongs/L023_Arv_och_polymorfism/L023_Arv_och_polymorfism.csproj" Id="a2045087-fb7f-427d-ada8-f8b6a95e099b" />
   <Project Path="Code-alongs/L024_Constructor_chaining/L024_Constructor_chaining.csproj" Id="e33dffc1-916b-4824-b3a0-b1dfa9119797" />
   <Project Path="Code-alongs/L025_Pattern_matching/L025_Pattern_matching.csproj" Id="540306bc-3b8f-40c3-8c78-2085facc835f" />
+  <Project Path="Code-alongs/L026_Generics/L026_Generics.csproj" Id="c245f5c6-c6ad-4b81-b170-3d58f5e57f7a" />
+  <Project Path="Code-alongs/L027_List/L027_List.csproj" Id="1a04c3cb-fd02-493f-83d1-709bce93378b" />
+  <Project Path="Code-alongs/L028_Dictionary/L028_Dictionary.csproj" Id="da115605-2320-4460-b768-f5df98ee89b2" />
 </Solution>
