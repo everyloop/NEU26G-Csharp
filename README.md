@@ -25,6 +25,7 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 | [Sep 28][Sep28] | Arv och polymorfism                                           |
 | [Sep 30][Sep30] | Constructor chainging. Pattern matching. Clean code basics.   |
 | [Okt 2][Okt2]   | Generiska klasser och metoder. Collections.                   |
+| [Okt 5][Okt5]   | Delegat. Event. Nullables.                                    |
 
 [Aug27]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Aug27.md
 [Sep1]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep1.md
@@ -42,3 +43,4 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 [Sep28]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep28.md
 [Sep30]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep30.md
 [Okt2]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt2.md
+[Okt5]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt5.md
