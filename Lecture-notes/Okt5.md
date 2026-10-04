@@ -462,3 +462,287 @@ SomethingHappened?.Invoke();
 ```
 
 Det ger oss ett sätt att skapa kommunikation mellan objekt där publishern inte behöver känna till vilka objekt som reagerar på eventet.
+
+# Nullable types och `null`
+
+`null` används för att representera att det **inte finns något värde eller någon referens**.
+
+Vi har tidigare sett att variabler av referenstyper kan innehålla `null`:
+
+```csharp
+string name = null;
+```
+
+Om vi försöker använda en referens som är `null` kan programmet krascha med en `NullReferenceException`:
+
+```csharp
+string name = null;
+
+Console.WriteLine(name.Length); // NullReferenceException
+```
+
+Modern C# har stöd för **nullable types** och analys av möjliga `null`-värden. Det hjälper oss att uttrycka när `null` är ett tillåtet värde och låter kompilatorn varna oss när det finns risk att vi använder `null` som om ett värde fanns.
+
+---
+
+## Nullable value types
+
+Value types som `int`, `double` och `bool` kan normalt inte innehålla `null`.
+
+```csharp
+int age = null; // Fel
+```
+
+Ibland behöver vi däremot kunna representera att ett värde **saknas**.
+
+Ett exempel skulle kunna vara en persons ålder där åldern inte är känd:
+
+```csharp
+int? age = null;
+```
+
+`?` gör här typen nullable.
+
+```csharp
+int? age = 42;
+age = null;
+```
+
+`int?` är egentligen en kortare syntax för:
+
+```csharp
+Nullable<int>
+```
+
+`Nullable<T>` är en generisk struct som håller reda på både värdet och om ett värde finns.
+
+Den har bland annat egenskaperna:
+
+```csharp
+age.HasValue
+age.Value
+```
+
+Exempel:
+
+```csharp
+int? age = 42;
+
+Console.WriteLine(age.HasValue); // True
+Console.WriteLine(age.Value);    // 42
+```
+
+Om värdet är `null`:
+
+```csharp
+int? age = null;
+
+Console.WriteLine(age.HasValue); // False
+```
+
+---
+
+## Nullable reference types
+
+Referenstyper har alltid kunnat innehålla `null`.
+
+Problemet är att det tidigare inte gick att uttrycka om `null` var ett **förväntat värde** eller om det innebar att något hade gått fel.
+
+Nullable reference types låter oss uttrycka denna intention:
+
+```csharp
+string name;
+string? middleName;
+```
+
+Vi kan tänka:
+
+```text
+string   → värdet förväntas inte vara null
+string?  → null är ett tillåtet/förväntat värde
+```
+
+Exempel:
+
+```csharp
+string firstName = "Anna";
+string? middleName = null;
+```
+
+Det kan exempelvis vara helt rimligt att en person saknar mellannamn:
+
+```csharp
+class Person
+{
+    public string FirstName { get; set; }
+    public string? MiddleName { get; set; }
+}
+```
+
+`null` är då ett legitimt tillstånd för `MiddleName`.
+
+### Nullable reference types skapar inte en ny runtime-typ
+
+Det finns en viktig skillnad mellan:
+
+```csharp
+int?
+```
+
+och:
+
+```csharp
+string?
+```
+
+`int?` är faktiskt:
+
+```csharp
+Nullable<int>
+```
+
+Men `string?` och `string` är inte två olika CLR-typer.
+
+`?` på en referenstyp används framför allt av kompilatorns **nullable analysis** för att förstå vår intention och kunna varna för möjliga problem.
+
+---
+
+## Nullable-varningar
+
+Om en referens får vara `null` måste vi ta hänsyn till det innan vi använder den.
+
+```csharp
+string? name = GetName();
+
+Console.WriteLine(name.Length);
+```
+
+Kompilatorn varnar eftersom `name` kanske är `null`.
+
+Vi kan kontrollera värdet:
+
+```csharp
+if (name != null)
+{
+    Console.WriteLine(name.Length);
+}
+```
+
+Kompilatorn förstår kontrollen och vet att `name` inte kan vara `null` inne i blocket.
+
+---
+
+## Null conditional operator `?.`
+
+Null conditional operator låter oss utföra en operation **endast om värdet inte är `null`**.
+
+```csharp
+string? name = GetName();
+
+Console.WriteLine(name?.Length);
+```
+
+Om `name` innehåller en sträng används `Length`.
+
+Om `name` är `null` försöker programmet inte komma åt `Length`. Resultatet av uttrycket blir istället `null`.
+
+Det fungerar även vid metodanrop:
+
+```csharp
+person?.PrintInfo();
+```
+
+Metoden anropas endast om `person` inte är `null`.
+
+Vi kommer bland annat att använda detta med events:
+
+```csharp
+SomethingHappened?.Invoke();
+```
+
+---
+
+## Null coalescing operator `??`
+
+Null coalescing operator låter oss ange ett alternativt värde om ett uttryck är `null`.
+
+```csharp
+string? name = GetName();
+
+string displayName = name ?? "Unknown";
+```
+
+Det kan läsas som:
+
+> Använd `name` om det finns ett värde, annars använd `"Unknown"`.
+
+`?.` och `??` används ofta tillsammans:
+
+```csharp
+Person? person = FindPerson();
+
+string name = person?.Name ?? "Unknown";
+```
+
+Här händer två saker:
+
+1. `person?.Name` hämtar `Name` endast om `person` inte är `null`.
+2. Om resultatet är `null` används `"Unknown"` istället.
+
+---
+
+## Null-forgiving operator `!`
+
+Det finns också en **null-forgiving operator**:
+
+```csharp
+string? name = GetName();
+
+Console.WriteLine(name!.Length);
+```
+
+`!` säger till kompilatorns nullable analysis:
+
+> Jag vet att detta värde inte är `null` här.
+
+Det är viktigt att förstå att `!` **inte kontrollerar eller förändrar värdet vid runtime**.
+
+Om `name` faktiskt är `null` kan detta fortfarande ge en `NullReferenceException`.
+
+`!` bör därför bara användas när programmeraren har information som kompilatorn inte kan avgöra.
+
+Vi kommer normalt att föredra att kontrollera och hantera möjliga `null`-värden istället för att bara stänga av varningen.
+
+---
+
+## Sammanfattning
+
+```csharp
+int? age;
+```
+
+`int?` är en nullable value type. Den kan innehålla ett heltal eller representera att värdet saknas.
+
+```csharp
+string? name;
+```
+
+`string?` anger att `null` är ett förväntat/tillåtet värde för referensen.
+
+```csharp
+person?.Name
+```
+
+`?.` utför operationen endast om värdet inte är `null`.
+
+```csharp
+name ?? "Unknown"
+```
+
+`??` använder ett alternativt värde om det första är `null`.
+
+```csharp
+person!.Name
+```
+
+`!` säger åt kompilatorn att behandla uttrycket som om det inte är `null`. Det ger ingen extra säkerhet vid runtime.
