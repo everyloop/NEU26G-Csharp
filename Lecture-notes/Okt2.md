@@ -2,6 +2,9 @@
 
 ## Generiska klasser och metoder
 
+**Code-along:**  
+[L026_Generics](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L026_Generics/Program.cs)
+
 En **generisk klass** eller **generisk metod** är kod som kan arbeta med olika datatyper utan att vi behöver skriva en separat version av koden för varje datatyp.
 
 Datatypen anges med en **typparameter**, som skrivs mellan `< >`. Vanligtvis används bokstaven `T` (från *type*) som namn på typparametern.
@@ -48,9 +51,6 @@ class Cage<T1, T2>
 Här kan `T1` och `T2` vara olika datatyper.
 
 [Läs mer om generics](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics)
-
-**Code-along:**  
-[L026_Generics](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L026_Generics/Program.cs)
 
 ## Generic collections
 
