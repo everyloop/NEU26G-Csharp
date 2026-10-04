@@ -691,6 +691,43 @@ Här händer två saker:
 
 ---
 
+## Null coalescing assignment operator `??=`
+
+Null coalescing assignment operator `??=` används för att tilldela ett värde **endast om variabeln är `null`**.
+
+```csharp
+string? name = null;
+
+name ??= "Unknown";
+
+Console.WriteLine(name); // Unknown
+```
+
+Det motsvarar ungefär:
+
+```csharp
+if (name is null)
+{
+    name = "Unknown";
+}
+```
+
+Om variabeln redan innehåller ett värde görs ingen tilldelning:
+
+```csharp
+string? name = "Anna";
+
+name ??= "Unknown";
+
+Console.WriteLine(name); // Anna
+```
+
+`??=` kan alltså läsas som:
+
+> Om värdet är `null`, tilldela värdet på höger sida.
+
+---
+
 ## Null-forgiving operator `!`
 
 Det finns också en **null-forgiving operator**:
