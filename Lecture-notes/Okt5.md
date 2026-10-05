@@ -2,6 +2,9 @@
 
 ## Delegates
 
+**Code-along:**  
+[L029_Delegates](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L029_Delegates/Program.cs)
+
 En **delegate** är en datatyp som kan innehålla en referens till en metod.
 
 Vilka metoder som kan refereras bestäms av delegatens **signatur** – alltså vilka parametrar metoden tar emot och vilken datatyp den returnerar.
@@ -224,6 +227,9 @@ Multicast delegates är särskilt relevanta för **events**, där flera metoder 
 ---
 
 ## Events
+
+**Code-along:**  
+[L031_Events](https://github.com/everyloop/NEU26G-Csharp/tree/master/Code-alongs/L031_Events)
 
 Ett **event** används när ett objekt behöver kunna meddela andra delar av programmet om att **något har hänt**.
 
@@ -464,6 +470,9 @@ SomethingHappened?.Invoke();
 Det ger oss ett sätt att skapa kommunikation mellan objekt där publishern inte behöver känna till vilka objekt som reagerar på eventet.
 
 # Nullable types och `null`
+
+**Code-along:**  
+[L030_Nullable_types](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L030_Nullable_types/Program.cs)
 
 `null` används för att representera att det **inte finns något värde eller någon referens**.
 
