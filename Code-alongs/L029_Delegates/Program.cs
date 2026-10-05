@@ -30,6 +30,39 @@ static void ExampleG(string s1, string s2, double d1, double d2, char c) { }
 // Vi kan nu göra ett anrop som om myDelegate var en faktisk funktion - den anropar då den funktion som myDelegate refererar till.
 int result = myDelegate("Hello world!");
 Console.WriteLine(result);
+
+
+
+// Multicast delegate: En delegate kan innehålla referenser till flera metoder samtidigt.
+Action notify = SendEmail;  // <= Sätt metoden till delegatets invokation method med =
+notify += SendSMS;          // <= Lägg till metoden på delegatens invocation list med +=
+notify += WriteLog;
+notify += SendSMS;
+notify = SendSMS;           // <= Eftersom vi använder = här, så skriver vi över (nollställer) hela listan.
+notify += WriteLog;
+
+// notify -= WriteLog;      // <= Ta bort metoden från delegatens invocation list med -=
+
+Console.WriteLine("\n\nInvoking delegate notify()");
+
+// När notify() anropas körs samtliga metoder i delegatens invocation list, i den ordning de lades till.
+notify();
+
+
+static void SendEmail()
+{
+    Console.WriteLine("Sending email!");
+}
+
+static void SendSMS()
+{
+    Console.WriteLine("Sending SMS!");
+}
+static void WriteLog()
+{
+    Console.WriteLine("Writing log!");
+}
+
 Console.WriteLine();
 
 
