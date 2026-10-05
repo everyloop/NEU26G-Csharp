@@ -1,0 +1,79 @@
+﻿
+// Exempel på hur vi skapar en ny instans myDelegate och pekar den på en funktion CountWords (som tar in en string, returnerar int)
+CounterDelegate myDelegate = CountWords; // new MyDelegate(CountWords); <== Alternativ syntax.
+
+// Vi kan nu göra ett anrop som om myDelegate var en faktisk funktion - den anropar då den funktion som myDelegate refererar till.
+int result = myDelegate("Hello world!");
+Console.WriteLine(result);
+Console.WriteLine();
+
+string[] strings = new string[] { "Hello world", "This is a SAMPLE text", "Yet anoter text" };
+
+// Samma metod kan nu användas med olika beteende beroende på vilken funktion vi skickar in som andra parameter.
+ProcessAndPrintStrings(strings, CountWords);
+Console.WriteLine();
+ProcessAndPrintStrings(strings, CountChars);
+Console.WriteLine();
+ProcessAndPrintStrings(strings, CountUppercaseLetters);
+
+
+// Delegat tillåter oss att skicka in beteende/funktionalitet till en metod - tidigare har vi endast skickat in data.
+static void ProcessAndPrintStrings(string[] strings, CounterDelegate counterMethod)
+{
+    foreach (var text in strings)
+    {
+        // Istället för att hårdkoda vilken funktion som ska köras, så anropar vi counterMethod: funktionen som skickats in vid anrop.
+        Console.WriteLine($"{text} => {counterMethod(text)}");
+    }
+}
+
+// OM vi inte haft delegat hade vi istället fått upprepa hela metoden enligt nedan,
+// med enda skillnaden vilken metod vi använder för att räkna. Detta vill vi unvika - DRY (Don't repeat yourself).
+
+//CountCharsAndPrintStrings(strings);
+//Console.WriteLine();
+//CountWordsAndPrintStrings(strings);
+
+//static void CountCharsAndPrintStrings(string[] strings)
+//{
+//    foreach (var text in strings)
+//    {
+//        Console.WriteLine($"{text} => {CountChars(text)}");
+//    }
+//}
+
+//static void CountWordsAndPrintStrings(string[] strings)
+//{
+//    foreach (var text in strings)
+//    {
+//        Console.WriteLine($"{text} => {CountWords(text)}");
+//    }
+//}
+
+// ... samt ytterligare upprepningar för varje sätt vi har att räkna - ex. CountUppercaseLetters.
+
+static int CountChars(string text)
+{
+    return text.Length;
+}
+
+static int CountWords(string text)
+{
+    return text.Split(' ').Length;
+}
+
+static int CountUppercaseLetters(string text)
+{
+    int count = 0;
+
+    foreach (var myChar in text)
+    {
+        if (Char.IsUpper(myChar)) count++;
+    }
+
+    return count;
+}
+
+// Delegat är en typdefinition: en referens till en metod/funktion.
+// Delegatet CounterDelegate är en referens till en funktion som tar en string som parameter, och returnerar en int.
+public delegate int CounterDelegate(string s);

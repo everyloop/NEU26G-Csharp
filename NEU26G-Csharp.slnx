@@ -27,4 +27,5 @@
   <Project Path="Code-alongs/L026_Generics/L026_Generics.csproj" Id="c245f5c6-c6ad-4b81-b170-3d58f5e57f7a" />
   <Project Path="Code-alongs/L027_List/L027_List.csproj" Id="1a04c3cb-fd02-493f-83d1-709bce93378b" />
   <Project Path="Code-alongs/L028_Dictionary/L028_Dictionary.csproj" Id="da115605-2320-4460-b768-f5df98ee89b2" />
+  <Project Path="Code-alongs/L029_Delegates/L029_Delegates.csproj" Id="f1588454-313a-4182-825b-6944ae7fafd6" />
 </Solution>
