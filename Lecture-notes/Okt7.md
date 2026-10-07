@@ -1,5 +1,9 @@
 # Oktober 7
 
+[Lambda-uttryck](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt7.md#lambda-uttryck)  
+[Arv, komposition och interfaces](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt7.md#arv-komposition-och-interfaces)
+
+
 # Lambda-uttryck
 
 **Code-along:**  
