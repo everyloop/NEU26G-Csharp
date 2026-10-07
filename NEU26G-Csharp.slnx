@@ -30,4 +30,6 @@
   <Project Path="Code-alongs/L029_Delegates/L029_Delegates.csproj" Id="f1588454-313a-4182-825b-6944ae7fafd6" />
   <Project Path="Code-alongs/L030_Nullable_types/L030_Nullable_types.csproj" Id="c35e303f-fb52-4633-8d49-f2b0db9de6aa" />
   <Project Path="Code-alongs/L031_Events/L031_Events.csproj" Id="a1c189ff-f7c3-4071-96c5-4346183b77f9" />
+  <Project Path="Code-alongs/L032_Lambda_expressions/L032_Lambda_expressions.csproj" Id="89af26fd-4195-49ac-9f55-fcae937de3b3" />
+  <Project Path="Code-alongs/L033_Interface/L033_Interface.csproj" Id="94ae5637-4038-4833-a23f-a69f68ef8c96" />
 </Solution>
