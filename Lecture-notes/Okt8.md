@@ -4,13 +4,16 @@
 
 Under lektionen gick vi igenom tre koncept:
 
-- **Extension methods** – att lägga till metoder som kan anropas på befintliga typer.
-- **Anonyma typer** – att skapa objekt utan att först deklarera en egen klass.
-- **LINQ** – att söka, filtrera, sortera och transformera data i samlingar.
+- [**Extension methods**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt8.md#extension-methods) – att lägga till metoder som kan anropas på befintliga typer.
+- [**Anonyma typer**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt8.md#anonyma-typer-anonymous-types) – att skapa objekt utan att först deklarera en egen klass.
+- [**LINQ**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt8.md#linq--language-integrated-query) – att söka, filtrera, sortera och transformera data i samlingar.
 
 Dessa koncept hänger ihop. LINQ använder bland annat extension methods och lambda-uttryck, och anonyma typer är användbara när vi vill bestämma hur resultatet ska se ut.
 
 # Extension methods
+
+**Code-along:**  
+[L034_Extension_methods](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L034_Extension_methods/Program.cs)
 
 En **extension method** gör det möjligt att anropa en statisk metod som om den vore en instansmetod på en befintlig typ.
 
@@ -95,6 +98,9 @@ Det här är särskilt viktigt eftersom många LINQ-metoder är extension method
 ---
 
 # Anonyma typer (Anonymous types)
+
+**Code-along:**  
+[L035_Anonymous_types](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L035_Anonymous_types/Program.cs)
 
 En **anonym typ** är en typ som kompilatorn skapar åt oss utan att vi behöver deklarera en namngiven klass.
 
@@ -190,6 +196,9 @@ Här skapas ett resultat med endast `FirstName` och `Age`, utan att vi behöver 
 ---
 
 # LINQ – Language Integrated Query
+
+**Code-along:**  
+[L036_LINQ](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L036_LINQ/Program.cs)
 
 **LINQ** står för *Language Integrated Query*.
 
