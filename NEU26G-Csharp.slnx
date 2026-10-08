@@ -32,4 +32,7 @@
   <Project Path="Code-alongs/L031_Events/L031_Events.csproj" Id="a1c189ff-f7c3-4071-96c5-4346183b77f9" />
   <Project Path="Code-alongs/L032_Lambda_expressions/L032_Lambda_expressions.csproj" Id="89af26fd-4195-49ac-9f55-fcae937de3b3" />
   <Project Path="Code-alongs/L033_Interface/L033_Interface.csproj" Id="94ae5637-4038-4833-a23f-a69f68ef8c96" />
+  <Project Path="Code-alongs/L034_Extension_methods/L034_Extension_methods.csproj" Id="9a85f745-8f12-4af8-bbe4-0733da7b638a" />
+  <Project Path="Code-alongs/L035_Anonymous_types/L035_Anonymous_types.csproj" Id="ba5347fb-f854-4b0f-8559-dd2a5b36a6e2" />
+  <Project Path="Code-alongs/L036_LINQ/L036_LINQ.csproj" Id="60cc0b83-3f29-4142-bfbb-cf7735f59ac7" />
 </Solution>
