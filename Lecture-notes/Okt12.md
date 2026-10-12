@@ -2,14 +2,17 @@
 
 Under den här lektionen började vi titta på hur datorer och program kan hantera flera saker samtidigt.
 
-Vi gick igenom begreppen **synchronous**, **asynchronous**, **concurrency**, **parallelism**, **multitasking**, **multithreading** och **multiprocessing**.
+Vi gick igenom begreppen [**synchronous**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt12.md#synkron-programmering), [**asynchronous**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt12.md#asynkron-programmering), [**concurrency**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt12.md#concurrency--samtidighet), [**parallelism**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt12.md#parallelism--parallellism), [**multitasking**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt12.md#multitasking), [**multithreading**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt12.md#multithreading) och [**multiprocessing**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt12.md#multiprocessing).
 
-Vi tittade också på hur trådar fungerar, hur .NET använder en ThreadPool och hur vi kan använda **PLINQ** och **Task Parallel Library (TPL)** för att utföra arbete parallellt.
+Vi tittade också på hur trådar fungerar, hur .NET använder en ThreadPool och hur vi kan använda [**PLINQ**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt12.md#8-plinq--parallel-linq) och [**Task Parallel Library (TPL)**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt12.md#task-parallel-library--tpl) för att utföra arbete parallellt.
 
 Under lektionen gjorde vi två större demonstrationer:
 
-1. LINQ, `IEnumerable<T>`, minnesförbrukning och parallella beräkningar med PLINQ.
-2. `Task`, `Task<TResult>`, `Task.Run()`, `Status` och `Result`.
+1. LINQ, `IEnumerable<T>`, minnesförbrukning och parallella beräkningar med PLINQ.  
+   **Code-along:** [L037_PLINQ](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L037_PLINQ/Program.cs)
+
+2. `Task`, `Task<TResult>`, `Task.Run()`, `Status` och `Result`.  
+   **Code-along:** [L038_Tasks](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L038_Tasks/Program.cs)
 
 ---
 
