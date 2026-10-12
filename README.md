@@ -28,7 +28,7 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 | [Okt 5][Okt5]   | Delegat. Event. Nullables.                                    |
 | [Okt 7][Okt7]   | Lambda expressions. Arv, komposition och interfaces.          |
 | [Okt 8][Okt8]   | Extension methods. Anonymous types. LINQ.                     |
-| [Okt 8][Okt8]   | Asynkron programmering, Multithreading, TPL, PLINQ, Task.     |
+| [Okt 12][Okt12]   | Asynkron programmering, Multithreading, TPL, PLINQ, Task.     |
 
 [Aug27]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Aug27.md
 [Sep1]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep1.md
