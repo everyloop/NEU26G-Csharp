@@ -55,6 +55,9 @@ internal class Program
 
         Console.WriteLine($"Downloaded {data.Length * 2} bytes of data.");
 
+
+        await ExceptionDemo();
+
         PrintThreadInfo("method end");
 
 
@@ -86,5 +89,39 @@ internal class Program
         PrintThreadInfo("download complete!");
 
         return data;
+    }
+
+    static async Task ExceptionDemo()
+    {
+        PrintThreadInfo("Method start");
+
+        Task downloadTask;
+
+
+        try
+        {
+            downloadTask = Task.Run(() =>
+            {
+                PrintThreadInfo("Download started!");
+                throw new Exception("Download failed!");
+            });
+
+            await Task.Delay(1000);
+            PrintThreadInfo($"Dowload status: {downloadTask.Status}");
+            await Task.Delay(3000);
+            PrintThreadInfo("Awaiting downloadTask");
+            await downloadTask;
+           
+        }
+        catch (Exception ex)
+        {
+            PrintThreadInfo($"Caught: {ex.Message}");
+            return;
+        }
+
+        //await downloadTask;
+
+
+        PrintThreadInfo("Method end");
     }
 }
