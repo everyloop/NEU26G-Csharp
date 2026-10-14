@@ -1,12 +1,20 @@
 # Oktober 14
 
-Under dagens lektion fortsatte vi med `Task` och gick vidare till `async` och `await`. Vi undersökte hur asynkrona metoder körs, hur de förhåller sig till trådar, hur undantag hanteras och vad som kan gå fel när flera trådar arbetar med samma data.
+Under dagens lektion fortsatte vi med [`Task`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt14.md#1-fr%C3%A5n-taskresult-till-await) och gick vidare till [`async` och `await`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt14.md#2-vad-betyder-async-och-await). Vi undersökte hur asynkrona metoder körs, hur de förhåller sig till trådar, hur undantag hanteras och vad som kan gå fel när flera trådar arbetar med samma data.
 
-Vi avslutade med race conditions, atomära operationer, `lock`, `Interlocked` och en introduktion till deadlocks.
+**Code-along:**  
+[L039_AsyncAwait](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L039_AsyncAwait/Program.cs)
+
+
+Vi avslutade med [race conditions](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt14.md#8-race-conditions--n%C3%A4r-flera-tr%C3%A5dar-%C3%A4ndrar-samma-data), atomära operationer, `lock`, `Interlocked` och en introduktion till deadlocks.
+
+**Code-along:**  
+[L040_Race_condition](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L040_Race_condition/Program.cs)
 
 ---
 
 ## 1. Från Task.Result till await
+
 
 Under föregående lektion använde vi `Task.Run()` för att starta arbete på en tråd från ThreadPool.
 
