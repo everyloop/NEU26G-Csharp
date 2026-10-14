@@ -38,5 +38,5 @@
   <Project Path="Code-alongs/L037_PLINQ/L037_PLINQ.csproj" Id="eb6e6f3e-cb7f-4515-8866-7e474eb5c96a" />
   <Project Path="Code-alongs/L038_Tasks/L038_Tasks.csproj" Id="8679371e-6d2b-4410-83aa-444b04d75737" />
   <Project Path="Code-alongs/L039_AsyncAwait/L039_AsyncAwait.csproj" Id="7a170d29-91a1-431d-9155-346ea59b7f05" />
-  <Project Path="L040_Race_condition/L040_Race_condition.csproj" Id="1a72b1d6-48ac-43c1-9c4a-8435a962598d" />
+  <Project Path="Code-alongs/L040_Race_condition/L040_Race_condition.csproj" />
 </Solution>
