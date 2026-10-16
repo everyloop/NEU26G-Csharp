@@ -30,6 +30,7 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 | [Okt 8][Okt8]   | Extension methods. Anonymous types. LINQ.                     |
 | [Okt 12][Okt12] | Asynkron programmering, Multithreading, TPL, PLINQ, Task.     |
 | [Okt 14][Okt14] | Async/Await. Trådsäkerhet.                                    |
+| [Okt 16][Okt16] | UX-design                                                     |
 
 [Aug27]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Aug27.md
 [Sep1]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep1.md
@@ -52,3 +53,4 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 [Okt8]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt8.md
 [Okt12]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt12.md
 [Okt14]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt14.md
+[Okt16]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt16.md
