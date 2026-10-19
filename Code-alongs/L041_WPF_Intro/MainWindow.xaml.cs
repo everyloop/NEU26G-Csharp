@@ -21,9 +21,21 @@ namespace L041_WPF_Intro
             InitializeComponent();
         }
 
-        private void MyButton_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Hello World!");
+            //MessageBox.Show("Hello World!");
+            if (sender is Button button)
+            {
+                button.Content += "!";
+                //if (button.HorizontalAlignment == HorizontalAlignment.Left)
+                //{
+                //    button.HorizontalAlignment = HorizontalAlignment.Right;
+                //}
+                //else
+                //{
+                //    button.HorizontalAlignment = HorizontalAlignment.Left;
+                //}
+            }
         }
     }
 }

@@ -13,22 +13,44 @@
         <Button
             x:Name="MyButton"
             HorizontalAlignment="Center" 
-            VerticalAlignment="Center"
-            Click="MyButton_Click"
-        >
-            Click
-        </Button>
+            VerticalAlignment="Top"
+            Click="Button_Click"
+            Content="Test!"
+        />
 
         <Button 
-            HorizontalAlignment="Center" 
-            VerticalAlignment="Top"
+            x:Name="MyOtherButton"
+            VerticalAlignment="Center"
+            Click="Button_Click"
         >
-            New Button
+            <Button.Content>hello</Button.Content>
+            <Button.HorizontalAlignment>Center</Button.HorizontalAlignment>
+        </Button>
+
+        <Button HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <StackPanel Orientation="Vertical">
+                <Image Width="50" Source="https://ardalis.com/img/csharp_logo.png" />
+                <Label>Knapp</Label>
+                <Image Width="50" Source="https://ardalis.com/img/csharp_logo.png" />
+            </StackPanel>
         </Button>
 
     </Grid>
 </Window>
 
+<!--
+    
+<Element Attribute="Value"> 
+</Element>   <= Closing element
+<SelfClosingElement />
+
+Alternativ syntax för att sätta properties:
+    
+Attribute syntax: <Button Content="Hello" />
+Property Element Syntax: <Button.Content>hello</Button.Content>  
+Content Syntax: <Button>hello</Button>
+-->
+    
 <!--    
 Uppgift 1: Gör så att när man klickar på ena knappen så flyttar sig andra knappen.
 Uppgift 2: Använd en gemensam eventhandler för båda knappar, flytta den knapp man klickar på.
