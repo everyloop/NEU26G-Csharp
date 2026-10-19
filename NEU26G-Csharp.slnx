@@ -39,4 +39,5 @@
   <Project Path="Code-alongs/L038_Tasks/L038_Tasks.csproj" Id="8679371e-6d2b-4410-83aa-444b04d75737" />
   <Project Path="Code-alongs/L039_AsyncAwait/L039_AsyncAwait.csproj" Id="7a170d29-91a1-431d-9155-346ea59b7f05" />
   <Project Path="Code-alongs/L040_Race_condition/L040_Race_condition.csproj" />
+  <Project Path="Code-alongs/L041_WPF_Intro/L041_WPF_Intro.csproj" Id="debd2965-d5ad-40a2-963f-cf1d9160aab8" />
 </Solution>
