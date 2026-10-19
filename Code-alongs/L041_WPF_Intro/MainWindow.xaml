@@ -25,5 +25,12 @@
         >
             New Button
         </Button>
+
     </Grid>
 </Window>
+
+<!--    
+Uppgift 1: Gör så att när man klickar på ena knappen så flyttar sig andra knappen.
+Uppgift 2: Använd en gemensam eventhandler för båda knappar, flytta den knapp man klickar på.
+-->
+    
