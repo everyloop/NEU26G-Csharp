@@ -6,6 +6,9 @@ Om du vill repetera det, så hittar du exemplen [här](https://github.com/everyl
 
 # Introduktion till WPF och XAML
 
+**Code-along:**  
+[L041_WPF_Intro](https://github.com/everyloop/NEU26G-Csharp/tree/master/Code-alongs/L041_WPF_Intro)
+
 Idag började vi arbeta med **WPF (Windows Presentation Foundation)**, ett ramverk i .NET för att utveckla grafiska Windows-applikationer.
 
 Vi tittade framför allt på hur man bygger ett användargränssnitt med **XAML**, hur XAML och C# samverkar och hur man kan reagera på användarens interaktioner, exempelvis knapptryckningar.
