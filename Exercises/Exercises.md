@@ -12,3 +12,4 @@
 [Arv](https://github.com/everyloop/NEU26G-Csharp/blob/master/Exercises/Arv.md)  
 [Delegat och lambda](https://github.com/everyloop/NEU26G-Csharp/blob/master/Exercises/Delegat.md)  
 [LINQ](https://github.com/everyloop/NEU26G-Csharp/blob/master/Exercises/LINQ.md)  
+[XAML](https://github.com/everyloop/NEU26G-Csharp/blob/master/Exercises/XAML.md)  
