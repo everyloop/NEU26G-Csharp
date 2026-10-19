@@ -31,6 +31,7 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 | [Okt 12][Okt12] | Asynkron programmering, Multithreading, TPL, PLINQ, Task.     |
 | [Okt 14][Okt14] | Async/Await. Trådsäkerhet.                                    |
 | [Okt 16][Okt16] | UX-design                                                     |
+| [Okt 19][Okt19] | Clean code (Labb2-exempel). Intro till WPF & XAML             |
 
 [Aug27]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Aug27.md
 [Sep1]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep1.md
@@ -54,3 +55,4 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 [Okt12]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt12.md
 [Okt14]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt14.md
 [Okt16]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt16.md
+[Okt19]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt19.md
