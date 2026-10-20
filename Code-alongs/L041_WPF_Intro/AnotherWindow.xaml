@@ -9,12 +9,63 @@
         d:Height="500" d:Width="500"
         Title="AnotherWindow" Height="450" Width="800">
     <Grid>
+        <!--<Button
+            Content="Top Left Button"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Padding="10"
+            Margin="10"
+        />
+
         <Button
-            Content="Hello"
+            Content="Bottom Right Button"
             VerticalAlignment="Bottom"
             HorizontalAlignment="Right"
-            Margin="0,0,189,198"
-            Padding="10 50 100 20"
-        />
+            Padding="10"
+            Margin="10"
+        />-->
+
+        <!--<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+            <Button
+                Content="Play"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Padding="10"
+                Margin="10"
+            />
+
+            <Button
+                Content="Options"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Padding="10"
+                Margin="10"
+            />
+
+            <Button 
+                Content="Quit"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Padding="10"
+                Margin="10"
+            />
+        </StackPanel>-->
+
+        <!--<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Width="400">
+
+            <Label>Firstname:</Label>
+            <TextBox Width="50" />
+            <Label HorizontalAlignment="Stretch">Lastname:</Label>
+            <TextBox />
+            <Button 
+                Content="OK"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Padding="10"
+                Margin="10"
+            />
+        </StackPanel>-->
+        
+        
     </Grid>
 </Window>
