@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:L042_Panels"
         mc:Ignorable="d"
         FontSize="30"
+        d:FontSize="40"
         Title="MainWindow" Height="800" Width="800">
     <Grid ShowGridLines="True">
         <Grid.RowDefinitions>
@@ -19,11 +20,37 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel x:Name="stackPanel" Grid.Row="0" Grid.Column="0">
-            <Button Content="1" HorizontalAlignment="Left" Width="40" Height="40" Margin="10 10 10 0" Click="Button_Click"/>
+            <Button Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Height="40" Margin="10 10 0 0" Click="Button_Click"/>
         </StackPanel>
         
-        <Button Content="WrapPanel" Grid.Row="0" Grid.Column="1"/>
-        <Button Content="DockPanel" Grid.Row="1" Grid.Column="0"/>
-        <Button Content="Canvas" Grid.Row="1" Grid.Column="1"/>
+        <WrapPanel x:Name="wrapPanel" Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
+            <Button Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Height="40" Margin="10 10 0 0" Click="WrapPanelButton_Click"/>
+        </WrapPanel>
+
+        <DockPanel x:Name="dockPanel" Grid.Row="1" Grid.Column="0">
+            <Button Content="L" DockPanel.Dock="Left" Click="DockPanelButton_Click" />
+        </DockPanel>
+
+        <Canvas Grid.Row="1" Grid.Column="1">
+            <Button Content="Test" Canvas.Left="50" Canvas.Top="100" />
+            <Rectangle 
+                Width="100"
+                Height="70"
+                Fill="Red"
+                Stroke="Black"
+                StrokeThickness="10"
+                Canvas.Left="20"
+                Canvas.Bottom="50"
+            />
+            <Ellipse 
+                Width="100"
+                Height="70"
+                Fill="Green"
+                Stroke="Black"
+                StrokeThickness="10"
+                Canvas.Right="20"
+                Canvas.Bottom="50"
+            />
+        </Canvas>
     </Grid>
 </Window>

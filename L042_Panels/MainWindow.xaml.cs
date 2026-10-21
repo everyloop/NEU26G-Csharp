@@ -17,31 +17,93 @@ namespace L042_Panels
     public partial class MainWindow : Window
     {
         private int _stackPanelCounter = 1;
+        private int _wrapPanelCounter = 1;
 
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void AddButtonToStackPanel()
         {
             var newButton = new Button()
             {
                 Content = ++_stackPanelCounter,
                 HorizontalAlignment = HorizontalAlignment.Left,
+                VerticalAlignment = VerticalAlignment.Top,
                 Width = 40,
                 Height = 40,
-                Margin = new Thickness(10, 10, 10, 0),
+                Margin = new Thickness(10, 10, 0, 0),
             };
 
             newButton.Click += Button_Click;
 
-            if (stackPanel.Children.Count % 5 == 0)
-            {
-                stackPanel.Children.Clear();
-            }
-
             stackPanel.Children.Add(newButton);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //if (stackPanel.Children.Count % 5 == 0)
+            //{
+            //    _stackPanelCounter = 0;
+            //    stackPanel.Children.Clear();
+            //    AddButtonToStackPanel();
+            //}
+
+            if (stackPanel.Children.IndexOf((UIElement)sender) == 0)
+            {
+                AddButtonToStackPanel();
+            }
+            else if (stackPanel.Children.IndexOf((UIElement)sender) == 4)
+            {
+                if (stackPanel.Orientation == Orientation.Horizontal)
+                {
+                    stackPanel.Orientation = Orientation.Vertical;
+                }
+                else
+                {
+                    stackPanel.Orientation = Orientation.Horizontal;
+                }
+            }
+            else
+            {
+                stackPanel.Children.Remove((UIElement)sender);
+            }
+        }
+
+        private void WrapPanelButton_Click(object sender, RoutedEventArgs e)
+        {
+            var newButton = new Button()
+            {
+                Content = ++_wrapPanelCounter,
+                HorizontalAlignment = HorizontalAlignment.Left,
+                VerticalAlignment = VerticalAlignment.Top,
+                Width = 40,
+                Height = 40,
+                Margin = new Thickness(10, 10, 0, 0),
+            };
+
+            wrapPanel.Children.Add(newButton);
+        }
+
+        private void DockPanelButton_Click(object sender, RoutedEventArgs e)
+        {
+            Dock dockPosition = (Dock)Random.Shared.Next(4);
+
+            var newButton = new Button()
+            {
+                Content = dockPosition.ToString()[0],
+            };
+
+            // Attaced Property
+            // Dock-propertyn finns inte på Button, utan sätts via DockPanel: DockPanel.SetDock(), DockPanel.GetDock(); 
+            DockPanel.SetDock(newButton, dockPosition);
+
+            //Även Grid använder Attached properties.
+            //Grid.SetRow(dockPanel, 0);
+            //Grid.GetRow(dockPanel);
+
+            dockPanel.Children.Add(newButton);
         }
     }
 
