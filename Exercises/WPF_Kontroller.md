@@ -75,7 +75,7 @@ Det ska alltså finnas ytterligare ett sätt att lägga till och ta bort student
 ***OBS!*** *Alla tre sätten ska fungera, och alla tre "Remove" måste bli enabled/disabled beroende på om det finns någon studenten som är "selected".*
 
 ## 10. Siffror i rutnät
-Skapa ett nytt program, som när det startar ser ut ungefär som [XAML-uppgift 6 ("Siffror i rutnät")](https://github.com/everyloop/NET24-Csharp/blob/master/Exercises/XAML.md), med skillnaden att det istället är 10x10 \<Label\>-element med siffrorna 0-99.
+Skapa ett nytt program, som när det startar ser ut ungefär som [XAML-uppgift 6 ("Siffror i rutnät")](https://github.com/everyloop/NEU26G-Csharp/blob/master/Exercises/XAML.md#6-siffror-i-rutn%C3%A4t), med skillnaden att det istället är 10x10 \<Label\>-element med siffrorna 0-99.
 
 ## 11. Siffror i rutnät med dynamisk storlek
 
