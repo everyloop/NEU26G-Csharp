@@ -374,6 +374,7 @@ Efter panelerna tittade vi på några vanliga kontroller:
 - [`TextBox`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md#textbox--skriva-och-redigera-text)
 - [`Button`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md#button--reagera-p%C3%A5-klick)
 - [`CheckBox`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md#checkbox--ett-val-som-kan-vara-p%C3%A5-eller-av)
+- **Bonus:** [`Slider`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md#3-slider--v%C3%A4lj-ett-numeriskt-v%C3%A4rde) (Vi gick aldrig igenom denna, men ni behöver den för övningsuppgifterna)
 
 Vi undersökte också hur man kan koppla ihop dem med event handlers.
 
