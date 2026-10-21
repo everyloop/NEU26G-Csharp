@@ -598,7 +598,7 @@ För små eller enkla operationer kan vanlig LINQ därför vara snabbare.
 
 ---
 
-# 10. Task och Task<TResult>
+# 10. Task och Task\<TResult\>
 
 Mot slutet av lektionen började vi arbeta med `Task`.
 
@@ -631,7 +631,7 @@ Här skickar vi en arbetsuppgift till ThreadPool.
 
 `Task.Run()` returnerar en `Task` som vi kan använda för att följa operationen.
 
-## Task<TResult>
+## Task\<TResult\>
 
 `Task<TResult>` representerar en operation som producerar ett resultat av typen `TResult`.
 
