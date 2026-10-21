@@ -99,5 +99,5 @@ Varje gång man klickar på en knapp så ska siffran räkna ner med 1. När en k
 
 D.v.s. den första knappen visar alltid 0; den andra knappen växlar mellan 1 och 0; den tredje växlar 2, 1, 0, och tillbaka till 2. etc. etc.
 
-
+***Tips:*** *Ett smidigt sätt att lösa detta är att använda Tag-propertyn som finns på de flesta WPF-kontroller.*
 
