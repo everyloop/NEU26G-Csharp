@@ -50,7 +50,7 @@ Använd de olika paneler vi kollat på (Grid, StackPanel, WrapPanel, DockPanel) 
 
 ## 10. Stapeldiagram
 
-Använd en Canvas som fyller ut hela fönstret. Gör en loop i code behind när programmet startar som skapar 10 rektanglar med olika (random) höjd jämte varandra.
+Använd en Canvas som fyller ut hela fönstret. Gör en loop i code behind när programmet startar som skapar rektanglar med olika (random) höjd jämte varandra.
 
 <img src="https://github.com/everyloop/NEU26G-Csharp/blob/master/Exercises/Images/XAMLDesign10.png" alt="XAMLDesign9" width="400"/>
 
