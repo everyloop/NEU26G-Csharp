@@ -32,6 +32,7 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 | [Okt 14][Okt14] | Async/Await. Trådsäkerhet.                                    |
 | [Okt 16][Okt16] | UX-design                                                     |
 | [Okt 19][Okt19] | Clean code (Labb2-exempel). Intro till WPF & XAML             |
+| [Okt 21][Okt21] | Layoutpaneler & Kontroller                                    |
 
 [Aug27]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Aug27.md
 [Sep1]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep1.md
@@ -56,3 +57,4 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 [Okt14]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt14.md
 [Okt16]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt16.md
 [Okt19]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt19.md
+[Okt21]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md
