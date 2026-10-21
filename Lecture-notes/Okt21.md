@@ -1,9 +1,12 @@
 
 # Oktober 21
 
-Idag fortsatte vi med WPF och XAML. Vi tittade först på olika **layoutpaneler**, alltså hur vi kan placera kontroller i ett fönster. Därefter undersökte vi några vanliga **kontroller**, hur deras properties fungerar och hur vi kan reagera på användarens interaktioner.
+Idag fortsatte vi med WPF och XAML. Vi tittade först på olika [**layoutpaneler**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md#1-layoutpaneler), alltså hur vi kan placera kontroller i ett fönster. Därefter undersökte vi några vanliga [**kontroller**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md#2-vanliga-kontroller-i-wpf), hur deras properties fungerar och hur vi kan reagera på användarens interaktioner.
 
 ## 1. Layoutpaneler
+
+**Code-along:**  
+[L042_Panels](https://github.com/everyloop/NEU26G-Csharp/tree/master/Code-alongs/L042_Panels)
 
 En layoutpanel är ett element som ansvarar för att **placera och arrangera sina barn** (*children*).
 
@@ -11,11 +14,11 @@ Olika paneler har olika regler för hur barnen placeras. Vilken panel vi väljer
 
 Vi tittade på:
 
-- `Grid`
-- `StackPanel`
-- `WrapPanel`
-- `DockPanel`
-- `Canvas`
+- [`Grid`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md#grid--rader-och-kolumner)
+- [`StackPanel`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md#stackpanel--staplar-elementen)
+- [`WrapPanel`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md#wrappanel--radbryter-automatiskt)
+- [`DockPanel`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md#dockpanel--docka-mot-kanterna)
+- [`Canvas`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md#canvas--absoluta-positioner)
 
 ### Grid – rader och kolumner
 
@@ -362,12 +365,15 @@ Viktiga properties:
 
 ## 2. Vanliga kontroller i WPF
 
+**Code-along:**  
+[L043_Kontroller](https://github.com/everyloop/NEU26G-Csharp/tree/master/Code-alongs/L043_Kontroller)
+
 Efter panelerna tittade vi på några vanliga kontroller:
 
-- `TextBlock`
-- `TextBox`
-- `Button`
-- `CheckBox`
+- [`TextBlock`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md#textblock--visa-text)
+- [`TextBox`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md#textbox--skriva-och-redigera-text)
+- [`Button`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md#button--reagera-p%C3%A5-klick)
+- [`CheckBox`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md#checkbox--ett-val-som-kan-vara-p%C3%A5-eller-av)
 
 Vi undersökte också hur man kan koppla ihop dem med event handlers.
 
