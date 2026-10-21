@@ -3,6 +3,8 @@
 
 Idag fortsatte vi med WPF och XAML. Vi tittade först på olika [**layoutpaneler**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md#1-layoutpaneler), alltså hur vi kan placera kontroller i ett fönster. Därefter undersökte vi några vanliga [**kontroller**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md#2-vanliga-kontroller-i-wpf), hur deras properties fungerar och hur vi kan reagera på användarens interaktioner.
 
+Vi pratade även om koncepten [attached properties](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md#attached-properties) samt [property value inheritance](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md#4-properties-kan-%C3%A4rvas-fr%C3%A5n-f%C3%B6r%C3%A4ldraelement)
+
 ## 1. Layoutpaneler
 
 **Code-along:**  
