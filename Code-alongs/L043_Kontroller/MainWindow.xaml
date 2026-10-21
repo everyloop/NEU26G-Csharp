@@ -1,0 +1,47 @@
+﻿<Window x:Class="L043_Kontroller.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L043_Kontroller"
+        mc:Ignorable="d"
+        FontSize="40"
+        Title="MainWindow" Height="800" Width="500">
+
+    <WrapPanel Orientation="Vertical">
+        <TextBlock FontFamily="Arial" Margin="10 10 10 0" >
+            <Run FontWeight="Bold" Text="Hello&#10;world"/>
+            <LineBreak />
+            <Run x:Name="redRun" Foreground="Red" FontStyle="Italic" Text="world"/>
+            <Run x:Name="anotherRun" FontWeight="Bold" Text="!!!"/>
+        </TextBlock>
+
+        <TextBox x:Name="textBox" Margin="10 10 10 0" FontSize="30" TextChanged="TextBox_TextChanged"/>
+
+        <Button x:Name="copyButton" IsEnabled="False" Visibility="Visible" Content="Copy" Margin="10 10 10 0" FontSize="20" Click="Button_Click" />
+        
+        <TextBox 
+            x:Name="textBox2" 
+            Margin="10 10 10 0" 
+            FontSize="30" 
+            Height="200"
+            Width="200"
+            AcceptsReturn="True"
+            TextWrapping="NoWrap"
+            VerticalScrollBarVisibility="Visible"
+            HorizontalScrollBarVisibility="Visible"
+            KeyDown="textBox_KeyDown"
+        />
+
+        <Viewbox Stretch="Uniform" Height="50" >
+            <CheckBox 
+                x:Name="checkBox"
+                Content="Hide scrollbars" 
+                FontSize="12" 
+                Margin="10 10 10 0" 
+                IsChecked="True"
+                Unchecked="CheckBox_CheckedChanged"
+                Checked="CheckBox_CheckedChanged"/>
+        </Viewbox>
+    </WrapPanel>
+</Window>
