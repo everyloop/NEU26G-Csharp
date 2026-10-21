@@ -38,7 +38,7 @@ Det ska också finnas två checkboxar. En "Lock x-value." och en "Lock y-value".
 
 ## 6. Formulär för studenter
 
-Utgå från [XAML-uppgift 8 ("Formulär för studenter")](https://github.com/everyloop/NET24-Csharp/blob/master/Exercises/XAML.md), men ta bort "OK"-knappen.
+Utgå från [XAML-uppgift 8 ("Formulär för studenter")](https://github.com/everyloop/NEU26G-Csharp/blob/master/Exercises/XAML.md#8-formul%C3%A4r-f%C3%B6r-studenter), men ta bort "OK"-knappen.
 
 Lägg till funktionalitet så att när man väljer en student i listan så visas den studentens förnamn, efternamn och email i formuläret till höger i fönstret; och om man uppdaterar något i formuläret så uppdateras den studenten i listan. 
 
