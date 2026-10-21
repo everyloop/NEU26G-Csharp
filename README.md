@@ -2,7 +2,7 @@
 
 ### Detta repo innehåller utbildningsmaterial för klassen NEU26G på ITHS Göteborg.
 
-Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlista](https://github.com/everyloop/NEU26G-Csharp/blob/master/Resources/Glossary.md), samt [övningsuppgifter](https://github.com/everyloop/NEU26G-Csharp/blob/master/Exercises/Exercises.md).
+Här hittar du code-along-projekt från lektioner, lektionsanteckningar, [ordlista](https://github.com/everyloop/NEU26G-Csharp/blob/master/Resources/Glossary.md), samt [övningsuppgifter](https://github.com/everyloop/NEU26G-Csharp/blob/master/Exercises/Exercises.md).
 
 
 **Anteckningar:**
@@ -10,7 +10,7 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 | Datum  | Översikt                                                               |
 |--------|------------------------------------------------------------------------|
 | [Aug 27][Aug27] | "The Big Picture", Visual Studio Installer + Visual Studio    |
-| [Sep 1][Sep1]   | Git/Github, Powershell                                        |
+| [Sep 1][Sep1]   | Git/GitHub, PowerShell                                        |
 | [Sep 3][Sep3]   | Variabler, Datatyper, If-satser, Loopar.                      |
 | [Sep 4][Sep4]   | Felsökning, Indexering, Arrayer, Strängar.                    |
 | [Sep 7][Sep7]   | Funktioner, Parametrar, Returvärde, Call Stack.               |
@@ -23,7 +23,7 @@ Här hittar du code-along projekt från lektioner, lektionsanteckningar, [ordlis
 | [Sep 23][Sep23] | Namespaces, Konstruktor, Properties.                          |
 | [Sep 25][Sep25] | Stack & Heap. Value types & Reference types. Struct & Class.  |
 | [Sep 28][Sep28] | Arv och polymorfism                                           |
-| [Sep 30][Sep30] | Constructor chainging. Pattern matching. Clean code basics.   |
+| [Sep 30][Sep30] | Constructor chaining. Pattern matching. Clean code basics.   |
 | [Okt 2][Okt2]   | Generiska klasser och metoder. Collections.                   |
 | [Okt 5][Okt5]   | Delegat. Event. Nullables.                                    |
 | [Okt 7][Okt7]   | Lambda expressions. Arv, komposition och interfaces.          |
