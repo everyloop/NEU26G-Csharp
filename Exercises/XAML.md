@@ -51,3 +51,5 @@ Använd de olika paneler vi kollat på (Grid, StackPanel, WrapPanel, DockPanel) 
 ## 10. Stapeldiagram
 
 Använd en Canvas som fyller ut hela fönstret. Gör en loop i code behind när programmet startar som skapar 10 rektanglar med olika (random) höjd jämte varandra.
+
+*Tips: I code-behind kan du använda Brushes för att välja färg (Exempel: myRectangle.Fill = Brushes.Red)
