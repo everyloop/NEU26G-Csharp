@@ -1,9 +1,5 @@
 # Övningsuppgifter med några vanliga UI element i WPF
 
-**OBS!** Vi kollade bara lite snabbt på code behind, och kommer gå igenom det mer på måndag.
-Men om någon vill börja kolla även på detta så lägger jag ut övningsuppgifter redan nu.
-Men gör gärna XAML-uppgifterna först!
-
 ## 1. Klickräknare
 
 Bygg ett program med en knapp som håller reda på hur många gånger man klickat på den.
