@@ -5,7 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:L043_Kontroller"
         mc:Ignorable="d"
-        FontSize="40"
         Title="MainWindow" Height="800" Width="500">
 
     <WrapPanel Orientation="Vertical">
@@ -16,14 +15,13 @@
             <Run x:Name="anotherRun" FontWeight="Bold" Text="!!!"/>
         </TextBlock>
 
-        <TextBox x:Name="textBox" Margin="10 10 10 0" FontSize="30" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="sourceTextBox" Margin="10 10 10 0" TextChanged="TextBox_TextChanged"/>
 
-        <Button x:Name="copyButton" IsEnabled="False" Visibility="Visible" Content="Copy" Margin="10 10 10 0" FontSize="20" Click="Button_Click" />
+        <Button x:Name="copyButton" IsEnabled="False" Visibility="Visible" Content="Copy" Margin="10 10 10 0" Click="Button_Click" />
         
         <TextBox 
-            x:Name="textBox2" 
+            x:Name="destinationTextBox" 
             Margin="10 10 10 0" 
-            FontSize="30" 
             Height="200"
             Width="200"
             AcceptsReturn="True"
@@ -33,15 +31,33 @@
             KeyDown="textBox_KeyDown"
         />
 
-        <Viewbox Stretch="Uniform" Height="50" >
-            <CheckBox 
-                x:Name="checkBox"
-                Content="Hide scrollbars" 
-                FontSize="12" 
-                Margin="10 10 10 0" 
-                IsChecked="True"
-                Unchecked="CheckBox_CheckedChanged"
-                Checked="CheckBox_CheckedChanged"/>
-        </Viewbox>
+        <!--<Viewbox Stretch="Uniform" Height="50" >-->
+        <CheckBox 
+            x:Name="checkBox"
+            Content="Show scrollbars" 
+            FontSize="12" 
+            Margin="10 10 10 0" 
+            IsChecked="True"
+            Unchecked="CheckBox_CheckedChanged"
+            Checked="CheckBox_CheckedChanged"/>
+        <!--</Viewbox>-->
+
+        <StackPanel Margin="10 10 10 0">
+            <Label Content="Copy mode:" />
+            <RadioButton x:Name="appendRadionButton" IsChecked="True" Content="Append" GroupName="CopyMode" />
+            <RadioButton x:Name="overwriteRadioButton" Content="Overwrite" GroupName="CopyMode"/>
+            <RadioButton x:Name="DisabledRadioButton" Content="Disabled" GroupName="CopyMode" />
+        </StackPanel>
+
+        <StackPanel Margin="10 10 10 0">
+            <Label Content="Language:" />
+            <RadioButton Content="Swedish" IsChecked="True" GroupName="Language" />
+            <RadioButton Content="English" GroupName="Language"/>
+        </StackPanel>
+
+        <ComboBox x:Name="countriesComboBox" Margin="10" SelectionChanged="countriesComboBox_SelectionChanged"/>
+        <TextBox x:Name="capitalTextBox" Margin="10 0"/>
+
+        <ListBox x:Name="listBox" SelectionMode="Single"  Height="150" Margin="10"/>
     </WrapPanel>
 </Window>

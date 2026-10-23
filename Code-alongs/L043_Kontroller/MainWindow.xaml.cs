@@ -19,37 +19,78 @@ namespace L043_Kontroller
         public MainWindow()
         {
             InitializeComponent();
+
+            var countries = new Country[] 
+            { 
+                new Country("Sweden", "Stockholm"),
+                new Country("Norway", "Oslo"),
+                new Country("Denmark", "Copenhagen")
+            };
+
+            countriesComboBox.ItemsSource = countries;
+            countriesComboBox.SelectedIndex = 0;
+            countriesComboBox.DisplayMemberPath = "Name";
+
+            listBox.ItemsSource = countries;
+            listBox.DisplayMemberPath = "Capital";
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            redRun.Text = textBox.Text;
-            copyButton.IsEnabled = (textBox.Text != "");
+            redRun.Text = sourceTextBox.Text;
+            copyButton.IsEnabled = (sourceTextBox.Text != "");
         }
 
         private void textBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter)
             {
-                anotherRun.Text = textBox2.Text;
+                anotherRun.Text = destinationTextBox.Text;
             }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            textBox2.Text = textBox.Text;
+            //copyButton.IsEnabled = (DisabledRadioButton.IsChecked == false);
+
+            if (appendRadionButton.IsChecked == true)
+            {
+                destinationTextBox.Text += sourceTextBox.Text;
+            }
+            else if (overwriteRadioButton.IsChecked == true)
+            {
+                destinationTextBox.Text = sourceTextBox.Text;
+            }
         }
 
         private void CheckBox_CheckedChanged(object sender, RoutedEventArgs e)
         {
             if (checkBox.IsChecked == true)
             {
-                textBox2.HorizontalScrollBarVisibility = textBox2.VerticalScrollBarVisibility = ScrollBarVisibility.Visible;
+                destinationTextBox.HorizontalScrollBarVisibility = destinationTextBox.VerticalScrollBarVisibility = ScrollBarVisibility.Visible;
             }
             else
             {
-                textBox2.HorizontalScrollBarVisibility = textBox2.VerticalScrollBarVisibility = ScrollBarVisibility.Hidden;
+                destinationTextBox.HorizontalScrollBarVisibility = destinationTextBox.VerticalScrollBarVisibility = ScrollBarVisibility.Hidden;
             }
         }
+
+        private void countriesComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            capitalTextBox.Text = (countriesComboBox.SelectedItem as Country)?.Capital;
+            listBox.SelectedItem = countriesComboBox.SelectedItem;
+        }
     }
+}
+
+class Country
+{
+    public Country(string name, string capital)
+    {
+        Name = name;
+        Capital = capital;
+    }
+
+    public string Name { get; set; }
+    public string Capital { get; set; }
 }
