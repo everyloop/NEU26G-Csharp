@@ -33,6 +33,7 @@ Här hittar du code-along-projekt från lektioner, lektionsanteckningar, [ordlis
 | [Okt 16][Okt16] | UX-design                                                     |
 | [Okt 19][Okt19] | Clean code (Labb2-exempel). Intro till WPF & XAML             |
 | [Okt 21][Okt21] | Layoutpaneler & Kontroller                                    |
+| [Okt 23][Okt23] | Fler WPF-kontroller. Dialogrutor.                             |
 
 [Aug27]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Aug27.md
 [Sep1]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep1.md
@@ -58,3 +59,4 @@ Här hittar du code-along-projekt från lektioner, lektionsanteckningar, [ordlis
 [Okt16]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt16.md
 [Okt19]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt19.md
 [Okt21]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md
+[Okt23]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt23.md
