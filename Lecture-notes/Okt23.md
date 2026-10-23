@@ -1,6 +1,6 @@
 # Oktober 23
 
-Under lektionen fortsatte vi med vanliga WPF-kontroller och gick sedan vidare till dialogrutor.
+Under lektionen fortsatte vi med [vanliga WPF-kontroller](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md#2-vanliga-kontroller-i-wpf) och gick sedan vidare till dialogrutor.
 
 Vi arbetade i två projekt:
 
