@@ -4,8 +4,8 @@ Under lektionen fortsatte vi med vanliga WPF-kontroller och gick sedan vidare ti
 
 Vi arbetade i två projekt:
 
-- **L043_Kontroller** – RadioButton, ComboBox och ListBox.
-- **L044_Dialogrutor** – MessageBox, OpenFileDialog, SaveFileDialog och egna dialogfönster.
+- [**L043_Kontroller**](https://github.com/everyloop/NEU26G-Csharp/tree/master/Code-alongs/L043_Kontroller) – [RadioButton](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt23.md#1-radiobutton), [ComboBox](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt23.md#2-combobox) och [ListBox](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt23.md#3-listbox).
+- [**L044_Dialogrutor**](https://github.com/everyloop/NEU26G-Csharp/tree/master/Code-alongs/L044_Dialogrutor) – [MessageBox](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt23.md#5-messagebox), [OpenFileDialog](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt23.md#6-openfiledialog), [SaveFileDialog](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt23.md#7-savefiledialog) och [egna dialogfönster](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt23.md#8-skapa-en-egen-dialogruta).
 
 
 
