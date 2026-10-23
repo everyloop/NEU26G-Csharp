@@ -380,6 +380,11 @@ Efter panelerna tittade vi på några vanliga kontroller:
 
 Vi undersökte också hur man kan koppla ihop dem med event handlers.
 
+På fredag kollar vi även på följande kontroller:
+- [`RadioButton`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt23.md#1-radiobutton)
+- [`ComboBox`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt23.md#2-combobox)
+- [`ListBox`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt23.md#3-listbox)
+
 ### TextBlock – visa text
 
 `TextBlock` används för att visa text som användaren normalt inte ska redigera.
