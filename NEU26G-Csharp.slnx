@@ -42,4 +42,5 @@
   <Project Path="Code-alongs/L041_WPF_Intro/L041_WPF_Intro.csproj" Id="debd2965-d5ad-40a2-963f-cf1d9160aab8" />
   <Project Path="Code-alongs/L042_Panels/L042_Panels.csproj" />
   <Project Path="Code-alongs/L043_Kontroller/L043_Kontroller.csproj" Id="295bd6f2-30a4-4c0c-8776-4383c4f68fbf" />
+  <Project Path="Code-alongs/L044_Dialogrutor/L044_Dialogrutor.csproj" Id="f01a4b51-6ccb-4abf-bfca-e3b7324cc59c" />
 </Solution>
