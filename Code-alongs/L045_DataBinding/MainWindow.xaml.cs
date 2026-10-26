@@ -9,26 +9,34 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace L045_DataBinding
+namespace L045_DataBinding;
+
+/// <summary>
+/// Interaction logic for MainWindow.xaml
+/// </summary>
+public partial class MainWindow : Window
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public MainWindow()
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
 
-        //private void sourceTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        //{
-        //    destinationTextBox.Text = sourceTextBox.Text;
-        //}
-
-        //private void destinationTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        //{
-        //    sourceTextBox.Text = destinationTextBox.Text;
-        //}
+        DataContext = new Person() { FirstName = "Anders", LastName = "Svensson" };
     }
+
+    //private void sourceTextBox_TextChanged(object sender, TextChangedEventArgs e)
+    //{
+    //    destinationTextBox.Text = sourceTextBox.Text;
+    //}
+
+    //private void destinationTextBox_TextChanged(object sender, TextChangedEventArgs e)
+    //{
+    //    sourceTextBox.Text = destinationTextBox.Text;
+    //}
+}
+
+class Person
+{
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+
 }

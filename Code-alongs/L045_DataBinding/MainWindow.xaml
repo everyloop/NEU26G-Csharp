@@ -7,10 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="300">
 
-    <StackPanel>
+    <StackPanel >
+        <!--<StackPanel.DataContext>
+            <local:Person FirstName="Fredrik" LastName="Johansson" />
+        </StackPanel.DataContext>-->
         <Label Content="_sourceTextBox:" Target="{Binding ElementName=sourceTextBox}"/>
         <TextBox x:Name="sourceTextBox" Margin="5 0" Text="Hello"/>
         <Label Content="_destinationTextBox:" Target="{Binding ElementName=destinationTextBox}" />
         <TextBox x:Name="destinationTextBox" Margin="5 0" Text="{Binding ElementName=sourceTextBox, Path=Text, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+
+        <Label Content="{Binding Path=FirstName}" />
+        <TextBox Margin="5 0" Text="{Binding Path=FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+        <Label Content="Last name" />
+        <TextBox Margin="5 0" Text="{Binding Path=LastName, Mode=TwoWay}" />
     </StackPanel>
 </Window>
