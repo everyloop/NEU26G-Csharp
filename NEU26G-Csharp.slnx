@@ -43,4 +43,5 @@
   <Project Path="Code-alongs/L042_Panels/L042_Panels.csproj" />
   <Project Path="Code-alongs/L043_Kontroller/L043_Kontroller.csproj" Id="295bd6f2-30a4-4c0c-8776-4383c4f68fbf" />
   <Project Path="Code-alongs/L044_Dialogrutor/L044_Dialogrutor.csproj" Id="f01a4b51-6ccb-4abf-bfca-e3b7324cc59c" />
+  <Project Path="Code-alongs/L045_DataBinding/L045_DataBinding.csproj" Id="853d7d77-d06e-44ea-b98e-ea4e7644d048" />
 </Solution>
