@@ -20,5 +20,6 @@
         <TextBox Margin="5 0" Text="{Binding Path=FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
         <Label Content="Last name" />
         <TextBox Margin="5 0" Text="{Binding Path=LastName, Mode=TwoWay}" />
+        <Button Content="Update FirstName" Click="Button_Click" />
     </StackPanel>
 </Window>
