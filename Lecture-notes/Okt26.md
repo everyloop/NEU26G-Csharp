@@ -1,5 +1,10 @@
 # Oktober 26
 
+**Code-along:**  
+[L045_DataBinding](https://github.com/everyloop/NEU26G-Csharp/tree/master/Code-alongs/L045_DataBinding)
+
+I dag har vi kollat på [Data binding](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt26.md#vad-%C3%A4r-data-binding), [DataContext](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt26.md#datacontext) och [INotifyPropertyChanged](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt26.md#inotifypropertychanged).
+
 ## Vad är Data Binding?
 
 **Data Binding** innebär att vi kopplar en property på ett UI-element till ett värde från en annan källa.
