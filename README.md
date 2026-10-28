@@ -35,6 +35,7 @@ Här hittar du code-along-projekt från lektioner, lektionsanteckningar, [ordlis
 | [Okt 21][Okt21] | Layoutpaneler & Kontroller                                    |
 | [Okt 23][Okt23] | Fler WPF-kontroller. Dialogrutor.                             |
 | [Okt 26][Okt26] | Data binding. Data context. INotifyPropertyChanged.           |
+| [Okt 28][Okt28] | MVVM. Labb3 Code-Along.                                       |
 
 [Aug27]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Aug27.md
 [Sep1]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep1.md
@@ -62,3 +63,4 @@ Här hittar du code-along-projekt från lektioner, lektionsanteckningar, [ordlis
 [Okt21]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt21.md
 [Okt23]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt23.md
 [Okt26]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt26.md
+[Okt28]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt28.md
