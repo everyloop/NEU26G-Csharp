@@ -1,5 +1,8 @@
 # Oktober 28
 
+**Code-along:**  
+[L046_Labb3_Code-along](https://github.com/everyloop/NEU26G-Csharp/tree/master/Code-alongs/L046_Labb3_Code-along)
+
 Under dagens code-along började vi bygga grunden till vår quizapplikation. Vi utgick från en tom WPF-applikation och skapade stegvis modeller, ViewModels och Views.
 
 Målet var att skapa en struktur som vi kan fortsätta bygga vidare på under labben.  
