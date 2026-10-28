@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using L046_Labb3_Code_along.Models;
+using L046_Labb3_Code_along.ViewModels;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;

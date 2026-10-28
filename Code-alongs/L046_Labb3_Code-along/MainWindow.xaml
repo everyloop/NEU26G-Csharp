@@ -4,9 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:L046_Labb3_Code_along"
+        xmlns:views="clr-namespace:L046_Labb3_Code_along.Views"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
 
+        <views:MenuView Grid.Row="0"/>
+        <views:PlayerView Grid.Row="1" />
+        <!--<views:ConfigurationView Grid.Row="1" />-->
     </Grid>
 </Window>
