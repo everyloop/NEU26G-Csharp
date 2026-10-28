@@ -14,7 +14,7 @@
         </Grid.RowDefinitions>
 
         <views:MenuView Grid.Row="0"/>
-        <views:PlayerView Grid.Row="1" />
-        <!--<views:ConfigurationView Grid.Row="1" />-->
+        <!--<views:PlayerView Grid.Row="1" />-->
+        <views:ConfigurationView Grid.Row="1" />
     </Grid>
 </Window>

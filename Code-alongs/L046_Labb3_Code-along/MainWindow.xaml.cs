@@ -21,6 +21,8 @@ namespace L046_Labb3_Code_along
         public MainWindow()
         {
             InitializeComponent();
+
+            DataContext = new MainWindowViewModel();
         }
     }
 }
