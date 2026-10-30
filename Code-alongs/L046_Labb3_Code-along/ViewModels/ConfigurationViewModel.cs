@@ -11,7 +11,13 @@ internal class ConfigurationViewModel : ViewModelBase
     private string _demoText = string.Empty;
     public string DemoText {
         get => _demoText;
-        set => SetProperty(ref _demoText, value); 
+        set
+        {
+            if (SetProperty(ref _demoText, value))
+            {
+                ChangePackNameCommand.RaiseCanExecuteChanged();
+            }
+        }
     }
 
     public QuestionPackViewModel? ActivePack { get => _mainWindowViewModel?.ActivePack; }
@@ -22,10 +28,15 @@ internal class ConfigurationViewModel : ViewModelBase
     {
         _mainWindowViewModel = mainWindowViewModel;
 
-        ChangePackNameCommand = new RelayCommand(ChangePackName);
+        ChangePackNameCommand = new RelayCommand(_ => ChangePackName(), _ => DemoText != string.Empty);
     }
 
-    private void ChangePackName(object? obj)
+    private bool CanChangePackName(object? arg)
+    {
+        return DemoText != string.Empty;
+    }
+
+    private void ChangePackName()
     {
         ActivePack?.Name = DemoText;
     }

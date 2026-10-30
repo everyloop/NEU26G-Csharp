@@ -13,6 +13,7 @@
                 <MenuItem Header="E_xit" InputGestureText="Alt+F4" />
             </MenuItem>
             <MenuItem Header="_Edit">
+                <MenuItem Header="Set Pack Name" Command="{Binding ConfigurationViewModel.ChangePackNameCommand}"/>
                 <MenuItem Header="Copy"/>
                 <MenuItem Header="Paste"/>
                 <MenuItem Header="Test">
