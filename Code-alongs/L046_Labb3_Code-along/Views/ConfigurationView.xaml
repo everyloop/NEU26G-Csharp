@@ -8,10 +8,14 @@
              DataContext="{Binding ConfigurationViewModel}"
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Button
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-            Content="{Binding Path=ActivePack.Name}"
-        />
+        <StackPanel>
+            <TextBox Text="{Binding DemoText}"/>
+            <Button
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Content="{Binding ActivePack.Name}"
+                Command="{Binding ChangePackNameCommand}"
+            />
+        </StackPanel>
     </Grid>
 </UserControl>

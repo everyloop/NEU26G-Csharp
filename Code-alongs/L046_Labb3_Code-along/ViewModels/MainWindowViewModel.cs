@@ -10,8 +10,14 @@ internal class MainWindowViewModel : ViewModelBase
 	private QuestionPackViewModel _activePack;
     public QuestionPackViewModel ActivePack
 	{
-		get => _activePack; 
-		set => SetProperty(ref _activePack, value);
+		get => _activePack;
+        set
+        {
+            if (SetProperty(ref _activePack, value))
+            {
+                ConfigurationViewModel?.RaiseActivePackChanged();
+            }
+        }
 	}
 
     public PlayerViewModel? PlayerViewModel { get; }
