@@ -45,4 +45,5 @@
   <Project Path="Code-alongs/L044_Dialogrutor/L044_Dialogrutor.csproj" Id="f01a4b51-6ccb-4abf-bfca-e3b7324cc59c" />
   <Project Path="Code-alongs/L045_DataBinding/L045_DataBinding.csproj" Id="853d7d77-d06e-44ea-b98e-ea4e7644d048" />
   <Project Path="Code-alongs/L046_Labb3_Code-along/L046_Labb3_Code-along.csproj" Id="178b857b-261c-4c64-a4fd-88fcddabde14" />
+  <Project Path="Code-alongs/L047_Dispatcher_&amp;_DispatcherTimer/L047_Dispatcher_&amp;_DispatcherTimer.csproj" Id="68dc4ffc-937b-4c95-85eb-8ea9b20f5d03" />
 </Solution>
