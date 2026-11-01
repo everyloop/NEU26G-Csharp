@@ -4,7 +4,7 @@ Under den här lektionen fortsatte vi med vår Quiz Configurator och introducera
 
 Vi skapade en generell `RelayCommand`-klass och använde den för att koppla knappar och menyalternativ till funktionalitet i en ViewModel. Vi tittade också på hur ett kommando kan avgöra om det får köras eller inte.
 
-Därefter skapade vi ett separat WPF-projekt där vi undersökte hur UI-tråden fungerar, vad som händer när den blockeras, hur vi kan använda [`Dispatcher`](L047_Dispatcher_%26_DispatcherTimer) för att köra kod på UI-tråden och hur [`DispatcherTimer`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt30.md#del-3--dispatchertimer-och-tidm%C3%A4tning) kan användas för återkommande uppdateringar.
+Därefter skapade vi ett separat WPF-projekt där vi undersökte hur UI-tråden fungerar, vad som händer när den blockeras, hur vi kan använda [`Dispatcher`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt30.md#del-2--dispatcher-och-ui-tr%C3%A5den) för att köra kod på UI-tråden och hur [`DispatcherTimer`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt30.md#del-3--dispatchertimer-och-tidm%C3%A4tning) kan användas för återkommande uppdateringar.
 
 
 ## 1. Commands och MVVM
