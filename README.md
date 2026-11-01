@@ -9,33 +9,34 @@ Här hittar du code-along-projekt från lektioner, lektionsanteckningar, [ordlis
 
 | Datum  | Översikt                                                               |
 |--------|------------------------------------------------------------------------|
-| [Aug 27][Aug27] | "The Big Picture", Visual Studio Installer + Visual Studio    |
-| [Sep 1][Sep1]   | Git/GitHub, PowerShell                                        |
+| [Aug 27][Aug27] | "The Big Picture", Visual Studio Installer + Visual Studio.   |
+| [Sep 1][Sep1]   | Git/GitHub, PowerShell.                                       |
 | [Sep 3][Sep3]   | Variabler, Datatyper, If-satser, Loopar.                      |
 | [Sep 4][Sep4]   | Felsökning, Indexering, Arrayer, Strängar.                    |
 | [Sep 7][Sep7]   | Funktioner, Parametrar, Returvärde, Call Stack.               |
-| [Sep 9][Sep9]   | Algoritmer & Problemlösning                                   |
+| [Sep 9][Sep9]   | Algoritmer & Problemlösning.                                  |
 | [Sep 11][Sep11] | Introduktion till några av de vanligaste klasserna i .NET     |
-| [Sep 14][Sep14] | Exception handling: try-catch-finally & throw                 |
+| [Sep 14][Sep14] | Exception handling: try-catch-finally & throw.                |
 | [Sep 16][Sep16] | Binary, Hexadecimal, Enheter/Prefix, ASCII, Unicode.          |
 | [Sep 18][Sep18] | Filhantering. Läsa och skriva filer. Strömmar.                |
 | [Sep 21][Sep21] | Introduktion OOP: klasser och objekt.                         |
 | [Sep 23][Sep23] | Namespaces, Konstruktor, Properties.                          |
 | [Sep 25][Sep25] | Stack & Heap. Value types & Reference types. Struct & Class.  |
-| [Sep 28][Sep28] | Arv och polymorfism                                           |
-| [Sep 30][Sep30] | Constructor chaining. Pattern matching. Clean code basics.   |
+| [Sep 28][Sep28] | Arv och polymorfism.                                          |
+| [Sep 30][Sep30] | Constructor chaining. Pattern matching. Clean code basics.    |
 | [Okt 2][Okt2]   | Generiska klasser och metoder. Collections.                   |
 | [Okt 5][Okt5]   | Delegat. Event. Nullables.                                    |
 | [Okt 7][Okt7]   | Lambda expressions. Arv, komposition och interfaces.          |
 | [Okt 8][Okt8]   | Extension methods. Anonymous types. LINQ.                     |
 | [Okt 12][Okt12] | Asynkron programmering, Multithreading, TPL, PLINQ, Task.     |
 | [Okt 14][Okt14] | Async/Await. Trådsäkerhet.                                    |
-| [Okt 16][Okt16] | UX-design                                                     |
-| [Okt 19][Okt19] | Clean code (Labb2-exempel). Intro till WPF & XAML             |
-| [Okt 21][Okt21] | Layoutpaneler & Kontroller                                    |
+| [Okt 16][Okt16] | UX-design.                                                    |
+| [Okt 19][Okt19] | Clean code (Labb2-exempel). Intro till WPF & XAML.            |
+| [Okt 21][Okt21] | Layoutpaneler & Kontroller.                                   |
 | [Okt 23][Okt23] | Fler WPF-kontroller. Dialogrutor.                             |
 | [Okt 26][Okt26] | Data binding. Data context. INotifyPropertyChanged.           |
 | [Okt 28][Okt28] | MVVM. Labb3 Code-Along.                                       |
+| [Okt 30][Okt30] | Commands. Dispatcher & DispatcherTimer.                       |
 
 [Aug27]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Aug27.md
 [Sep1]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep1.md
@@ -64,3 +65,4 @@ Här hittar du code-along-projekt från lektioner, lektionsanteckningar, [ordlis
 [Okt23]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt23.md
 [Okt26]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt26.md
 [Okt28]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt28.md
+[Okt30]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt30.md
