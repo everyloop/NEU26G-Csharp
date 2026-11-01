@@ -4,9 +4,13 @@ Under den här lektionen fortsatte vi med vår Quiz Configurator och introducera
 
 Vi skapade en generell `RelayCommand`-klass och använde den för att koppla knappar och menyalternativ till funktionalitet i en ViewModel. Vi tittade också på hur ett kommando kan avgöra om det får köras eller inte.
 
-Därefter skapade vi ett separat WPF-projekt där vi undersökte hur UI-tråden fungerar, vad som händer när den blockeras, hur vi kan använda `Dispatcher` för att köra kod på UI-tråden och hur `DispatcherTimer` kan användas för återkommande uppdateringar.
+Därefter skapade vi ett separat WPF-projekt där vi undersökte hur UI-tråden fungerar, vad som händer när den blockeras, hur vi kan använda [`Dispatcher`](L047_Dispatcher_%26_DispatcherTimer) för att köra kod på UI-tråden och hur [`DispatcherTimer`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt30.md#del-3--dispatchertimer-och-tidm%C3%A4tning) kan användas för återkommande uppdateringar.
+
 
 ## 1. Commands och MVVM
+
+**Code-along:**  
+[L046_Labb3_Code-along](https://github.com/everyloop/NEU26G-Csharp/tree/master/Code-alongs/L046_Labb3_Code-along)
 
 Tidigare har vi använt vanliga Click-events för att hantera knapptryckningar:
 
@@ -337,6 +341,9 @@ Detta kommer vi att återkomma till när vi arbetar vidare med quizapplikationen
 
 Vi skapade sedan ett separat WPF-projekt för att undersöka hur trådar och asynkron kod fungerar tillsammans med ett grafiskt gränssnitt.
 
+**Code-along:**  
+[L047_Dispatcher_&_DispatcherTimer](https://github.com/everyloop/NEU26G-Csharp/tree/master/Code-alongs/L047_Dispatcher_%26_DispatcherTimer)
+
 ## 7. Vad händer när vi blockerar UI-tråden?
 
 Vi började med en enkel knapp:
@@ -491,6 +498,9 @@ Det är det problemet Dispatcher hjälper oss att lösa.
 ---
 
 # Del 3 – DispatcherTimer och tidmätning
+
+**Code-along:**  
+[L047_Dispatcher_&_DispatcherTimer](https://github.com/everyloop/NEU26G-Csharp/tree/master/Code-alongs/L047_Dispatcher_%26_DispatcherTimer)
 
 ## 11. DispatcherTimer
 
