@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:L047_Dispatcher___DispatcherTimer"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
     </Application.Resources>
 </Application>

@@ -1,0 +1,68 @@
+﻿<Window x:Class="L048_Styles___Templates.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L048_Styles___Templates"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="300">
+    <Window.Resources>
+        <SolidColorBrush Color="Red" x:Key="MyColor"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.Resources>
+            <local:Country Name="Sweden" Capital="Stockholm" x:Key="Country"/>
+
+            <x:Array x:Key="Countries" Type="{x:Type local:Country}">
+                <local:Country Name="Sweden" Capital="Stockholm" />
+                <local:Country Name="Norway" Capital="Oslo" />
+                <local:Country Name="Denmark" Capital="Copenhagen" />
+            </x:Array>
+            <!--<SolidColorBrush Color="LightBlue" x:Key="MyColor"/>-->
+
+            <!-- Se App.xaml / Styles.xaml för styles -->
+
+            <DataTemplate x:Key="ListTemplate">
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox Margin="0 0 5 0"/>
+                    <TextBlock FontWeight="Bold" Text="{Binding Name}" />
+                    <TextBlock Text=" - " />
+                    <TextBlock Text="{Binding Capital}" />
+                </StackPanel>
+            </DataTemplate>
+        </Grid.Resources>
+
+        <StackPanel>
+            <Button 
+                x:Name="ButtonA" 
+                Content="{StaticResource Country}" 
+                Background="{StaticResource MyColor}" 
+            />
+
+            <Button Content="Button B" />
+            <Button Content="Button C" Style="{StaticResource DangerButton}" />
+            <Button Content="Button D" />
+
+            <Button 
+                Content="{Binding Capital, Source={StaticResource Country}}" 
+            />
+
+            <ListBox
+                ItemsSource="{StaticResource Countries}"
+                ItemTemplate="{StaticResource ListTemplate}"
+            />
+            <!--<ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <CheckBox Margin="0 0 5 0"/>
+                            <TextBlock FontWeight="Bold" Text="{Binding Name}" />
+                            <TextBlock Text=" - " />
+                            <TextBlock Text="{Binding Capital}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>-->
+
+        </StackPanel>
+    </Grid>
+</Window>
