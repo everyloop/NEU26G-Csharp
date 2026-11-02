@@ -47,4 +47,5 @@
   <Project Path="Code-alongs/L046_Labb3_Code-along/L046_Labb3_Code-along.csproj" Id="178b857b-261c-4c64-a4fd-88fcddabde14" />
   <Project Path="Code-alongs/L047_Dispatcher_&amp;_DispatcherTimer/L047_Dispatcher_&amp;_DispatcherTimer.csproj" Id="68dc4ffc-937b-4c95-85eb-8ea9b20f5d03" />
   <Project Path="Code-alongs/L048_Styles_&amp;_Templates/L048_Styles_&amp;_Templates.csproj" Id="8d85cab8-af50-4060-a444-d3bae5e2794e" />
+  <Project Path="Code-alongs/L049_Windows_in_MVVM/L049_Windows_in_MVVM.csproj" Id="c121977c-d74d-4cb9-94a1-bbb2c6eae790" />
 </Solution>
