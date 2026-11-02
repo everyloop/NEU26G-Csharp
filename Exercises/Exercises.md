@@ -16,3 +16,4 @@
 [WPF-kontroller](https://github.com/everyloop/NEU26G-Csharp/blob/master/Exercises/WPF_Kontroller.md)  
 [Dialogrutor](https://github.com/everyloop/NEU26G-Csharp/blob/master/Exercises/Dialogrutor.md)  
 [Data binding](https://github.com/everyloop/NEU26G-Csharp/blob/master/Exercises/DataBinding.md)  
+[Styles & Templates](https://github.com/everyloop/NEU26G-Csharp/blob/master/Exercises/StylesAndTemplates.md)  
