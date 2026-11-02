@@ -2,12 +2,17 @@
 
 I dag har vi kollat på:
 
-- **Resources** – återanvändbara objekt i XAML.
-- **Styles** – gemensamma egenskaper för flera kontroller.
-- **ResourceDictionary** – ett sätt att samla resurser i separata filer.
-- **DataTemplates** – bestämmer hur objekt ska presenteras i gränssnittet.
-- **Öppna fönster i MVVM** -utan att viewmodel behöver känna till specifika WPF-fönster
-- **Converters** - för att kunna binda två properties som inte har samma datatyp.
+- [**Resources**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Nov2.md#1-resources) – återanvändbara objekt i XAML.
+- [**Styles**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Nov2.md#2-styles) – gemensamma egenskaper för flera kontroller.
+- [**ResourceDictionary**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Nov2.md#3-resourcedictionary) – ett sätt att samla resurser i separata filer.
+- [**DataTemplates**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Nov2.md#6-datatemplates) – bestämmer hur objekt ska presenteras i gränssnittet.
+- [**Öppna fönster i MVVM**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Nov2.md#11-%C3%B6ppna-nya-f%C3%B6nster-i-mvvm) -utan att viewmodel behöver känna till specifika WPF-fönster
+- [**Converters**](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Nov2.md#14-converters-i-wpf) - för att kunna binda två properties som inte har samma datatyp.
+
+**Code-alongs:**  
+[L048_Styles_&_Templates](https://github.com/everyloop/NEU26G-Csharp/tree/master/Code-alongs/L048_Styles_%26_Templates)  
+[L049_Windows_in_MVVM](https://github.com/everyloop/NEU26G-Csharp/tree/master/Code-alongs/L049_Windows_in_MVVM)
+
 
 ## 1. Resources
 

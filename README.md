@@ -37,7 +37,7 @@ Här hittar du code-along-projekt från lektioner, lektionsanteckningar, [ordlis
 | [Okt 26][Okt26] | Data binding. Data context. INotifyPropertyChanged.           |
 | [Okt 28][Okt28] | MVVM. Labb3 Code-Along.                                       |
 | [Okt 30][Okt30] | Commands. Dispatcher & DispatcherTimer.                       |
-| [Nov 2][Nov2]    | Resources. Styles. DataTemplates.                            |
+| [Nov 2][Nov2]   | Resources. Styles. DataTemplates. Dialogs(MVVM). Converters.  |
 
 [Aug27]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Aug27.md
 [Sep1]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep1.md
