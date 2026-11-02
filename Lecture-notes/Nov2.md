@@ -6,6 +6,8 @@ I dag har vi kollat på:
 - **Styles** – gemensamma egenskaper för flera kontroller.
 - **ResourceDictionary** – ett sätt att samla resurser i separata filer.
 - **DataTemplates** – bestämmer hur objekt ska presenteras i gränssnittet.
+- **Öppna fönster i MVVM** -utan att viewmodel behöver känna till specifika WPF-fönster
+- **Converters** - för att kunna binda två properties som inte har samma datatyp.
 
 ## 1. Resources
 
@@ -612,6 +614,244 @@ En `ObservableCollection<T>` har dessutom fördelen att listkontrollen kan uppda
 
 En vanlig array från `x:Array` har inte den funktionen.
 
+
+## 11. Öppna nya fönster i MVVM
+
+I WPF kan vi öppna nya fönster med `Show()` eller `ShowDialog()`.
+
+- `Show()` öppnar ett vanligt fönster som användaren kan växla mellan.
+- `ShowDialog()` öppnar ett **modalt dialogfönster**. Användaren måste stänga dialogen innan hen kan fortsätta använda dess ägarfönster.
+
+I vårt exempel ville vi öppna ett `SettingsDialog` när användaren klickade på en knapp i `MainWindow`.
+
+### Hur gör vi detta med MVVM?
+
+Vi vill helst inte att vår ViewModel ska behöva känna till specifika WPF-fönster eller själv anropa `ShowDialog()`.
+
+Därför kombinerade vi **Commands och Events**:
+
+1. Knappen i `MainWindow` är bunden till `OpenSettingsCommand`.
+2. När kommandot körs skickar ViewModel ett event, `OpenSettings`.
+3. `MainWindow` prenumererar på eventet.
+4. När eventet skickas skapar och öppnar `MainWindow` ett `SettingsDialog`.
+
+I ViewModel:
+
+```csharp
+public event EventHandler? OpenSettings;
+
+public RelayCommand OpenSettingsCommand { get; }
+
+private void RaiseOpenSettings()
+{
+    OpenSettings?.Invoke(this, EventArgs.Empty);
+}
+```
+
+Kommandot kopplas till `RaiseOpenSettings()` i ViewModels konstruktor.
+
+I `MainWindow` prenumererar vi på eventet:
+
+```csharp
+_viewModel.OpenSettings += _viewModel_OpenSettings;
+```
+
+Och öppnar dialogen i eventhanteraren:
+
+```csharp
+var dialog = new SettingsDialog
+{
+    DataContext = _viewModel,
+    Owner = this,
+    WindowStartupLocation = WindowStartupLocation.CenterOwner
+};
+
+dialog.ShowDialog();
+```
+
+Några viktiga detaljer:
+
+- **DataContext:** Dialogen använder samma ViewModel som huvudfönstret.
+- **Owner:** Anger att dialogen tillhör huvudfönstret.
+- **CenterOwner:** Placerar dialogen i mitten av huvudfönstret.
+- **ShowDialog():** Öppnar dialogen modalt och väntar på att den stängs.
+
+Det här är ett exempel på att **code-behind inte är förbjudet i MVVM**. Att skapa och visa ett fönster är UI-relaterad kod och passar bra i View.
+
+ViewModel behöver bara meddela *att* användaren vill öppna inställningarna, inte *hur* fönstret ska öppnas.
+
+## 12. Dela data mellan fönster med DataContext
+
+Vi hade en property `ButtonName` i vår ViewModel, som bestämde texten på knappen i huvudfönstret.
+
+I `SettingsDialog` skapade vi en `TextBox` med följande binding:
+
+```xml
+<TextBox Text="{Binding ButtonName, UpdateSourceTrigger=PropertyChanged}"/>
+```
+
+Eftersom båda fönstren använder **samma ViewModel-objekt** arbetar de också med samma `ButtonName`.
+
+När användaren skriver i dialogens TextBox uppdateras därför knappens text i huvudfönstret.
+
+`UpdateSourceTrigger=PropertyChanged` innebär att värdet uppdateras vid varje textändring, i stället för först när TextBoxen tappar fokus.
+
+Tack vare `INotifyPropertyChanged` får huvudfönstrets knapp automatiskt veta när `ButtonName` ändras.
+
+Vi behöver alltså inte manuellt skicka tillbaka texten från dialogen.
+
+### Vad händer om användaren klickar Cancel?
+
+I vårt exempel ändras `ButtonName` direkt medan användaren skriver.
+
+Det innebär att en Cancel-knapp inte automatiskt skulle ångra ändringarna.
+
+Om vi vill kunna avbryta behöver vi exempelvis:
+
+1. Kopiera `ButtonName` till en tillfällig property, exempelvis `TemporaryButtonName`, när dialogen öppnas.
+2. Binda dialogens TextBox till `TemporaryButtonName`.
+3. Kopiera tillbaka värdet till `ButtonName` endast om användaren klickar OK.
+
+I större dialoger kan det vara lämpligt att använda en separat ViewModel för de värden som redigeras.
+
+## 13. DialogResult och användarvänliga dialogfönster
+
+Vi tittade också på några enkla sätt att förbättra användarupplevelsen (**UX**, User Experience).
+
+### DialogResult
+
+När vi öppnar ett fönster med `ShowDialog()` kan vi använda `DialogResult` för att ange hur dialogen avslutades.
+
+```csharp
+DialogResult = true;
+```
+
+När vi sätter `DialogResult` stängs det modala fönstret automatiskt.
+
+`ShowDialog()` returnerar ett `bool?`, så vi kan kontrollera resultatet:
+
+```csharp
+if (dialog.ShowDialog() == true)
+{
+    // Användaren klickade OK
+}
+```
+
+Om användaren stänger dialogen med krysset blir resultatet normalt `false`.
+
+### IsDefault och IsCancel
+
+Vi kan göra dialogen enklare att använda med tangentbordet:
+
+```xml
+<Button Content="OK" IsDefault="True"/>
+<Button Content="Cancel" IsCancel="True"/>
+```
+
+- **IsDefault:** Användaren kan aktivera OK-knappen med Enter.
+- **IsCancel:** Användaren kan avbryta med Escape. I en modal dialog kan knappen också stänga dialogen med resultatet `false`.
+
+Det här är vanliga beteenden som användare förväntar sig av dialogfönster.
+
+### Autofokus och markera befintlig text
+
+När vår inställningsdialog öppnas vill vi att användaren ska kunna börja skriva direkt, utan att först behöva klicka i TextBoxen.
+
+Vi använde fönstrets `Loaded`-event:
+
+```csharp
+Loaded += (_, _) =>
+{
+    textBox.Focus();
+    textBox.SelectAll();
+};
+```
+
+- `Focus()` placerar tangentbordsfokus i TextBoxen.
+- `SelectAll()` markerar all befintlig text.
+
+Användaren kan då direkt skriva ett nytt namn och ersätta den gamla texten.
+
+Vi väntar på `Loaded` eftersom fokus och textmarkering inte alltid fungerar som tänkt om de sätts direkt i konstruktorn innan fönstret har laddats.
+
+### TabIndex och IsTabStop
+
+Användaren ska också kunna navigera mellan kontroller med Tab-tangenten.
+
+- **TabIndex:** Bestämmer i vilken ordning kontrollerna får fokus när användaren trycker Tab.
+- **IsTabStop="False":** Gör att en kontroll hoppas över vid Tab-navigering.
+
+```xml
+<TextBox TabIndex="1"/>
+<TextBox TabIndex="2"/>
+<TextBox IsTabStop="False"/>
+<Button Content="OK" TabIndex="3"/>
+```
+
+En bra dialog bör gå att använda utan mus. Det är både bekvämt och viktigt för tillgängligheten.
+
+## 14. Converters i WPF
+
+Ibland vill vi binda en property till en annan property som har en **annan datatyp**.
+
+Exempelvis:
+
+- En `CheckBox` har `IsChecked`, som är en `bool?`.
+- En `Button` har `Visibility`, som är en enum med värdena `Visible`, `Hidden` och `Collapsed`.
+
+Vi behöver därför omvandla värdet från checkboxen innan vi använder det för knappens synlighet.
+
+Det är vad en **Converter** gör.
+
+### BooleanToVisibilityConverter
+
+WPF har en inbyggd converter som heter `BooleanToVisibilityConverter`.
+
+Vi skapade den som en resurs:
+
+```xml
+<BooleanToVisibilityConverter x:Key="boolToVisibility"/>
+```
+
+Sedan använde vi den i en binding:
+
+```xml
+<Button
+    Visibility="{Binding IsChecked,
+                         ElementName=myCheckBox,
+                         Converter={StaticResource boolToVisibility}}"/>
+```
+
+Här anger vi:
+
+- **IsChecked:** Vilket värde vi vill läsa.
+- **ElementName:** Vilken kontroll värdet kommer från.
+- **Converter:** Hur värdet ska omvandlas.
+
+Resultatet blir:
+
+- `true` → `Visible`
+- `false` → `Collapsed`
+
+`Collapsed` innebär att kontrollen både döljs och slutar ta upp plats i layouten.
+
+Det skiljer sig från `Hidden`, där kontrollen är osynlig men fortfarande tar upp plats.
+
+### Egna converters och IValueConverter
+
+Vi kan även skapa egna converters i C#.
+
+Då skapar vi en klass som implementerar interfacet `IValueConverter`.
+
+Det innehåller två metoder:
+
+- **Convert:** Omvandlar värdet från bindningens källa till målegenskapen.
+- **ConvertBack:** Omvandlar värdet åt andra hållet, exempelvis vid TwoWay-binding.
+
+En egen converter kan exempelvis användas för att visa olika färger beroende på ett värde eller för att presentera data på ett annat sätt än den lagras.
+
+Vi implementerade ingen egen converter under lektionen, men principen är densamma som för den inbyggda `BooleanToVisibilityConverter`.
+
 ## Sammanfattning
 
 - **Resources** låter oss återanvända objekt och värden i XAML.
@@ -626,3 +866,10 @@ En vanlig array från `x:Array` har inte den funktionen.
 - Inuti en DataTemplate är `DataContext` normalt det aktuella objektet i listan.
 - `ItemsSource` anger vilka objekt som visas, medan `ItemTemplate` anger hur de visas.
 - DataTemplates fungerar lika bra med data från en ViewModel som med objekt skapade direkt i XAML.
+- En ViewModel kan använda **Commands och Events** för att begära att ett nytt fönster öppnas, utan att själv känna till fönstret.
+- Code-behind är lämpligt för UI-relaterade uppgifter som att öppna och stänga fönster.
+- Flera fönster kan dela samma ViewModel genom att använda samma `DataContext`.
+- `ShowDialog()` öppnar ett modalt fönster, och `DialogResult` anger hur det avslutades.
+- `IsDefault`, `IsCancel`, `Focus()`, `SelectAll()`, `TabIndex` och `IsTabStop` hjälper oss skapa mer användarvänliga dialoger.
+- **Converters** omvandlar värden vid databinding.
+- WPF har inbyggda converters, men vi kan också skapa egna genom att implementera `IValueConverter`.
