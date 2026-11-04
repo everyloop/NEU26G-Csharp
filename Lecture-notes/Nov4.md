@@ -481,7 +481,7 @@ Vi använde en `MessageBox` för att visa eventuella fel, som en enkel lösning 
 
 Precis som med vår vanliga `RelayCommand` och `ViewModelBase` bygger vi den själva för att förstå hur den fungerar.
 
-I större projekt används ofta färdiga bibliotek, exempelvis **CommunityToolkit.Mvvm**, som innehåller mer genomarbetade implementationer med bland annat körstatus, avbrytning och olika strategier för felhantering.
+I större projekt används ofta färdiga bibliotek, exempelvis [**CommunityToolkit.Mvvm**](https://www.nuget.org/packages/CommunityToolkit.Mvvm), som innehåller mer genomarbetade implementationer med bland annat körstatus, avbrytning och olika strategier för felhantering.
 
 ## Sammanfattning
 
