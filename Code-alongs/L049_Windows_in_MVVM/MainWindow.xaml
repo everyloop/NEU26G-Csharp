@@ -26,6 +26,12 @@
             <TextBox Margin="5" TabIndex="4"/>-->
 
             <CheckBox x:Name="myCheckBox" Content="Show Button" IsChecked="True" />
+            
+            <Button 
+                Content="Async Demo Command" 
+                HorizontalAlignment="Center" 
+                Command="{Binding AsyncDemoCommand}"
+            />
         </StackPanel>
     </Grid>
 </Window>

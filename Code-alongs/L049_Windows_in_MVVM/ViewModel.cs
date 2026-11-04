@@ -5,6 +5,7 @@ internal class ViewModel : ViewModelBase
     public event EventHandler? OpenSettings;
 
     public RelayCommand OpenSettingsCommand { get; }
+    public AsyncRelayCommand AsyncDemoCommand { get; }
 
     private string _buttonName = "Default button name";
 
@@ -18,6 +19,11 @@ internal class ViewModel : ViewModelBase
     public ViewModel()
     {
         OpenSettingsCommand = new RelayCommand(_ => RaiseOpenSettings());
+        AsyncDemoCommand = new AsyncRelayCommand(async _ => {
+            await Task.Delay(3000);
+            //throw new ArgumentException("Nåt gick fel!");
+            ButtonName += "X";
+        });
     }
 
 
