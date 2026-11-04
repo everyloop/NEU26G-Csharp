@@ -1,5 +1,12 @@
 # November 4
 
+Idag har vi kollat på:
+
+- [Ostrukturerad, strukturerad och semi-strukturerad data.](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Nov4.md#1-olika-typer-av-data)
+- [Json](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Nov4.md#2-vad-%C3%A4r-json)
+- [Serialize / Deserialize](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Nov4.md#3-serialisering-och-deserialisering)
+- [AsyncRelayCommand](https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Nov4.md#10-asyncrelaycommand-i-mvvm) 
+
 ## 1. Olika typer av data
 
 Vi började med att prata om hur data kan organiseras och lagras.
@@ -95,6 +102,9 @@ Några viktiga detaljer:
 JSON beskriver alltså **data**, inte C#-klasser eller programlogik.
 
 ## 3. Serialisering och deserialisering
+
+**Code-along:**  
+[L050_Json](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L050_Json/Program.cs)  
 
 När vi arbetar med JSON i C# behöver vi kunna omvandla mellan C#-objekt och JSON.
 
@@ -405,9 +415,13 @@ För små JSON-filer behövs det normalt inte.
 
 ## 10. AsyncRelayCommand i MVVM
 
-Som avslutning återvände vi till vår tidigare WPF-code-along och lade till en `AsyncRelayCommand`.
+Som avslutning återvände vi till vår tidigare WPF-code-along och lade till en [`AsyncRelayCommand`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L049_Windows_in_MVVM/AsyncRelayCommand.cs).
 
-Vi hade redan en vanlig `RelayCommand` som tar emot en `Action<object?>`.
+**Code-along:**  
+[L049_Windows_in_MVVM](https://github.com/everyloop/NEU26G-Csharp/tree/master/Code-alongs/L049_Windows_in_MVVM)  
+
+
+Vi hade redan en vanlig [`RelayCommand`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L049_Windows_in_MVVM/RelayCommand.cs) som tar emot en `Action<object?>`.
 
 Problemet är att följande kod:
 
@@ -427,7 +441,7 @@ Det innebär att flera klick kan starta flera överlappande operationer.
 
 ### AsyncRelayCommand
 
-Vår nya `AsyncRelayCommand` tar i stället emot en:
+Vår nya [`AsyncRelayCommand`](https://github.com/everyloop/NEU26G-Csharp/blob/master/Code-alongs/L049_Windows_in_MVVM/AsyncRelayCommand.cs) tar i stället emot en:
 
 ```csharp
 Func<object?, Task>
