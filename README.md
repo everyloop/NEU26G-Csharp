@@ -39,6 +39,7 @@ Här hittar du code-along-projekt från lektioner, lektionsanteckningar, [ordlis
 | [Okt 30][Okt30] | Commands. Dispatcher & DispatcherTimer.                       |
 | [Nov 2][Nov2]   | Resources. Styles. DataTemplates. Dialogs(MVVM). Converters.  |
 | [Nov 4][Nov4]   | Json Serialize/Deserialize. AsyncRelayCommand.                |
+| [Nov 6][Nov6]   | Clean code. Design-principer. SOLID.                          |
 
 [Aug27]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Aug27.md
 [Sep1]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Sep1.md
@@ -70,3 +71,4 @@ Här hittar du code-along-projekt från lektioner, lektionsanteckningar, [ordlis
 [Okt30]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Okt30.md
 [Nov2]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Nov2.md
 [Nov4]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Nov4.md
+[Nov6]: https://github.com/everyloop/NEU26G-Csharp/blob/master/Lecture-notes/Nov6.md
